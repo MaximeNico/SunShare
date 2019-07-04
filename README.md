@@ -6,27 +6,27 @@
 <img src="https://www.monprojetpourlaplanete.gouv.fr/media/cache/default_profile/default/0001/01/3b76a871f1976cf21fcdfb9b4dea828ce98c1828.png" alt="Sunshare Logo" align="right" style="margin-right: 25px" height=130></a>
 Dans le cadre d'un projet d'expérimentation pour l'école IMIE, le projet "Sunshare" nous a été soumis.
 Pour bien comprendre l'existant voici quelques liens :
-- [Contexte du projet & Consignes](http://imie.sunshare.fr/)
-- [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox)
-- [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)
-- [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)
+1. [Contexte du projet & Consignes](http://imie.sunshare.fr/)
+2. [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox)
+3. [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)
+4. [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)
 
 Les objectifs concrets de ce projet sont :
 1. Créer une démo fonctionnelle du "Serious Game"
-1.1. Créer une interface utilisateur/équipe/administrateur
-1.2 Créer une base de données utilisateurs
-1.3 Créer une API sur l'interface de développement de la société ENEDIS
-1.4 Création d'un portail sécurisé
-1.5 Création d'un mode simplifié
-1.6 Établir les règles du jeu
+  - Créer une interface utilisateur/équipe/administrateur
+  - Créer une base de données utilisateurs
+  - Créer une API sur l'interface de développement de la société ENEDIS
+  - Création d'un portail sécurisé
+  - Création d'un mode simplifié
+  - Établir les règles du jeu
 2. Améliorer les couches existantes sur la partie Boxénergie
-2.1 Changement graphique de l'interface utilisateur actuelle
-2.2 Connexion en JavaScript avec les capteurs (TIC et compteur à impulsions)
-2.3 Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
-2.4 Création d'une alerte sonore et/ou visuelle
+  - Changement graphique de l'interface utilisateur actuelle
+  - Connexion en JavaScript avec les capteurs (TIC et compteur à impulsions)
+  - Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
+  - Création d'une alerte sonore et/ou visuelle
 3. Réaliser certaines des fonctionnalités supplémentaires (si le temps nous le permet)
-3.1 Création de compte, nouvel utilisateur
-3.2 Commande de déclenchement électrique (réalisation d'effacement de puissance)
+  - Création de compte, nouvel utilisateur
+  - Commande de déclenchement électrique (réalisation d'effacement de puissance)
 
 ## Architecture initiale
 
