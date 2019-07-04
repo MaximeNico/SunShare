@@ -108,9 +108,11 @@ Soon...
 Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
 Une fois le .zip téléchargé ne pas de le dézipper.
 Télécharger [Ethcer](https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
+Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
 Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
 
-Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire)
+Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
+
 Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :
@@ -118,3 +120,20 @@ Une fois connecté mettre à jour la dernière version des paquets avec la ligne
 ```bash
 sudo apt-get update && sudo apt-get upgrade
 ```
+
+##Partie base de données
+
+Pour installer la base de données il faut faire les commandes suivantes :
+
+```bash
+sudo apt install mongodb
+sudo systemctl enable mongodb
+```
+
+Pour tester si la base est bien active effectuer la commande :
+
+```bash
+mongo
+```
+
+Voila pour la partie base de données :thumbsup:
