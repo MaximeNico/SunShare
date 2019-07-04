@@ -117,7 +117,7 @@ Si vous êtes sous windows télécharger la dernière version de [putty](https:/
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :
 
-```bash
+```
 sudo apt-get update && sudo apt-get upgrade
 ```
 
@@ -125,14 +125,14 @@ sudo apt-get update && sudo apt-get upgrade
 
 Pour installer la base de données il faut faire les commandes suivantes :
 
-```bash
+```
 sudo apt install mongodb
 sudo systemctl enable mongodb
 ```
 
 Pour tester si la base est bien active effectuer la commande :
 
-```bash
+```
 mongo
 ```
 
