@@ -45,14 +45,14 @@ Pour cette partie il nous a été demandé de créer deux interfaces graphiques 
 ### Page  utilisateur
 Voici la maquette de la page :
 
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(Dashboard).png" alt="Maquette User" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(Dashboard).png" alt="Maquette User" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 
 Cette page comprend un menu, des encarts de conseil pour améliorer son score et des graphiques.
 
 ### Page groupes
 Voici la maquette de la page :
 
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(TeamBoard).png" alt="Maquette User" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(TeamBoard).png" alt="Maquette Team" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 
 Cette page comprend le classement de son équipe avec le podium de l'équipe et un classement global avec l'affichage des 3 meilleures équipes.
 
