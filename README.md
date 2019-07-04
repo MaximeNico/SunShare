@@ -40,8 +40,8 @@ Voici un schéma de l'architecture envisagée en sa version initiale :
 
 ## Création des visuels
 Pour cette partie il nous a été demandé de créer deux interfaces graphiques distinctes :
-	- Une dédiée à l'utilisateur
-	- Une dédiée à l'équipe
+- Une dédiée à l'utilisateur
+- Une dédiée à l'équipe
 ### Page  utilisateur
 Voici la maquette de la page :
 
