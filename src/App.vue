@@ -2,11 +2,18 @@
   <div id="app">
     <div class="container-fluid app">
       <div class="row">
-        <div class="col-3 menuSide">
+        <div class="col col-3 menuSide">
           <menuSide />
         </div>
-        <div class="col-9 routerView">
-          <router-view/>
+        <div class="col col-9">
+          <div class="row header">
+            <appHeader />
+          </div>
+          <div class="row routerView">
+            <transition name="fade">
+              <router-view/>
+            </transition>
+          </div>
         </div>
       </div>
     </div>
@@ -15,11 +22,13 @@
 
 <script>
 import menuSide from '@/components/menuSide'
+import appHeader from '@/components/appHeader'
 
 export default {
   name: 'App',
   components: {
-    menuSide
+    menuSide,
+    appHeader
   }
 }
 </script>
@@ -33,7 +42,8 @@ html, body, #app {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #343434;
@@ -48,6 +58,19 @@ html, body, #app {
 .container-fluid.app > div > .menuSide {
   padding: 0;
   max-width: 206px;
+}
+
+.header {
+  margin-top: 10px;
+}
+
+/* -- TRANSITION CSS */
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 </style>
