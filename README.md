@@ -120,8 +120,9 @@ Une fois connecté mettre à jour la dernière version des paquets avec la ligne
 ```
 sudo apt-get update && sudo apt-get upgrade
 ```
+Répéter l'opération pour le second raspberrypi
 
-## Partie base de données
+### Partie base de données
 
 Pour installer la base de données il faut faire les commandes suivantes :
 
@@ -137,3 +138,23 @@ mongo
 ```
 
 Voila pour la partie base de données :thumbsup:
+
+### Partie serveur web (Docker)
+
+Commencer par installer la dépendance ffi :
+
+```
+libffi-dev
+```
+
+Pour installer Docker et Docker-compose utiliser les ligne suivantes :
+```
+sudo apt install docker-ce
+sudo usermod -aG docker pi
+sudo apt-get install -y python python-pip
+sudo pip install docker-compose
+```
+
+Nico la suite pour les deux composants
+
+Voila pour la partie docker :thumbsup:
