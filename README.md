@@ -115,6 +115,6 @@ Si vous êtes sous windows télécharger la dernière version de [putty](https:/
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :
 
-'''bash
+```bash
 sudo apt-get update && sudo apt-get upgrade
-'''
+```
