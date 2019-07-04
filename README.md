@@ -114,6 +114,7 @@ Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel addition
 Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :
-'''Bash
+
+'''bash
 sudo apt-get update && sudo apt-get upgrade
 '''
