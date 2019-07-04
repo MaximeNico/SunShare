@@ -121,7 +121,7 @@ Une fois connecté mettre à jour la dernière version des paquets avec la ligne
 sudo apt-get update && sudo apt-get upgrade
 ```
 
-##Partie base de données
+## Partie base de données
 
 Pour installer la base de données il faut faire les commandes suivantes :
 
