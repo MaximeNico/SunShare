@@ -1,5 +1,5 @@
 <template>
-    <div class=" container appHeader">
+    <div class=" container-fluid appHeader">
       <div class="weatherDay">
         Aujourd'hui: <p class="weather">{{ weather }}</p>
       </div>

@@ -10,20 +10,20 @@
         <menuSideButton :title="'Bonnes pratiques'" :route="'bestPractices'" />
       </div>
       <div class="chat-button">
-        <chatButton />
+        <chatIcon />
       </div>
     </div>
 </template>
 
 <script>
 import menuSideButton from '@/components/menuSideButton'
-import chatButton from '@/components/icons/chatButton'
+import chatIcon from '@/components/icons/chatIcon'
 
 export default {
   name: 'menuSide',
   components: {
     menuSideButton,
-    chatButton
+    chatIcon
   }
 }
 </script>
