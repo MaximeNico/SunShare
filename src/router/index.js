@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import dashBoard from '@/views/DashBoard'
-import team from '@/views/team'
-import profil from '@/views/profil'
+import dashBoard from '@/views/dashBoard'
+import team from '@/views/Team'
+import profil from '@/views/Profil'
 import bestPractices from '@/views/BestPractices'
 
 Vue.use(Router)
