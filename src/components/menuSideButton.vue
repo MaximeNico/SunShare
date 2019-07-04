@@ -33,7 +33,7 @@ export default {
 
 .menuSideButton {
     color: #ffffff;
-    font-size: 1.2em;
+    font-size: 20px;
     cursor: pointer;
     display: flex;
     flex-direction: row;
