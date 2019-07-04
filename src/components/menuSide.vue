@@ -1,9 +1,9 @@
 <template>
     <div class="container menuSide">
         <menuSideButton :title="'Tableau de bord'" :route="'dashBoard'" />
-        <menuSideButton :title="'Mon équipe'" />
-        <menuSideButton :title="'Mon profile'" />
-        <menuSideButton :title="'Bonnes pratiques'" />
+        <menuSideButton :title="'Mon équipe'" :route="'team'" />
+        <menuSideButton :title="'Mon profile'" :route="'profil'" />
+        <menuSideButton :title="'Bonnes pratiques'" :route="'bestPractices'" />
     </div>
 </template>
 

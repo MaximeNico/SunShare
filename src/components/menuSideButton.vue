@@ -1,6 +1,6 @@
 <template>
     <div class="menuSideButton" @click="goToView">
-        {{ title }} 
+        {{ title }}
         <menuSideButtonIcon />
     </div>
 </template>
@@ -37,4 +37,3 @@ export default {
 }
 
 </style>
-
