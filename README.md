@@ -6,10 +6,10 @@
 <img src="https://www.monprojetpourlaplanete.gouv.fr/media/cache/default_profile/default/0001/01/3b76a871f1976cf21fcdfb9b4dea828ce98c1828.png" alt="Sunshare Logo" align="right" style="margin-right: 25px" height=130></a>
 Dans le cadre d'un projet d'expérimentation pour l'école IMIE, le projet "Sunshare" nous a été soumis.
 Pour bien comprendre l'existant voici quelques liens :
-	- [Contexte du projet & Consignes](http://imie.sunshare.fr/)
-	- [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox)
-	- [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)
-	- [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)
+- [Contexte du projet & Consignes](http://imie.sunshare.fr/)
+- [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox)
+- [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)
+- [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)
 
 Les objectifs concrets de ce projet sont :
 1. Créer une démo fonctionnelle du "Serious Game"
