@@ -7,9 +7,9 @@
 Dans le cadre d'un projet d'expérimentation pour l'école IMIE, le projet "Sunshare" nous a été soumis.
 Pour bien comprendre l'existant voici quelques liens :
 1. [Contexte du projet & Consignes](http://imie.sunshare.fr/)
-2. [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox) <img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" align="right" style="margin-right: 25px" height=30></a>
-3. [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" align="right" style="margin-right: 25px" height=30></a>
-4. [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" align="right" style="margin-right: 25px" height=30></a>
+2. [Projet de base sur Git (Serious Game)](https://github.com/sunsharebox) <img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" height=30></a>
+3. [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" height=30></a>
+4. [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" height=30></a>
 
 Les objectifs concrets de ce projet sont :
 1. Créer une démo fonctionnelle du "Serious Game"
