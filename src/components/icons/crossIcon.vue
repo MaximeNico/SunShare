@@ -1,5 +1,6 @@
 <template>
   <svg
+    @click="clicked"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
     version="1.1"
@@ -38,7 +39,12 @@
 
 <script>
 export default {
-  name: 'crossIcon'
+  name: 'crossIcon',
+  methods: {
+    clicked: function () {
+      this.$emit('crossIconClicked', true)
+    }
+  }
 }
 </script>
 

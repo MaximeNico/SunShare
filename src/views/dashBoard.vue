@@ -2,7 +2,9 @@
   <div class="container-fluid dashBoard">
     <div class="row advice-contain">
       <div class="col col-12">
-        <adviceBlock v-if="showAdvice" :title="'Conseil du jour !'" @closeAdviceBlock="checkAdviceBlockStatus" />
+        <transition name="fade">
+          <adviceBlock v-if="showAdvice" :title="'Conseil du jour !'" @adviceBlockDestroy="checkAdviceBlockStatus" />
+        </transition>
       </div>
     </div>
     <div class="row main-contain">
@@ -65,7 +67,7 @@ export default {
   },
   methods: {
     checkAdviceBlockStatus: function (value) {
-      this.showAdvice = value
+      (value) ? this.showAdvice = false : null
     }
   }
 }

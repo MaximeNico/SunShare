@@ -6,7 +6,7 @@
             <lightIcon />
             {{ title }}
           </div>
-          <crossIcon @click="closeAdviceBlock" />
+          <crossIcon @crossIconClicked="checkState" />
         </div>
         <div class="row main-contain">
           <div class="col col-2 picture-advice">
@@ -47,9 +47,8 @@ export default {
     }
   },
   methods: {
-    closeAdviceBlock: function () {
-      console.log('coucou')
-      this.$emit('sdfsfsdfsdf', false)
+    checkState: function (value) {
+      (value) ? this.$emit('adviceBlockDestroy', true) : null
     }
   }
 }
