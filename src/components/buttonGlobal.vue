@@ -1,6 +1,6 @@
 <template>
     <div class="buttonGLobal">
-        <button type="button" :style="{ backgroundColor: bgColor, color: color, fontSize: fontSize }" class="btn btn-lg">{{ title }}</button>
+        <button type="button" @click="goToRoute" :style="{ backgroundColor: bgColor, color: color, fontSize: fontSize }" class="btn btn-lg">{{ title }}</button>
     </div>
 </template>
 
@@ -23,6 +23,15 @@ export default {
     fontSize: {
       type: Number,
       default: 25
+    },
+    routeName: {
+      type: String,
+      default: null
+    }
+  },
+  methods: {
+    goToRoute: function () {
+      (this.routeName) ? this.$router.push({ name: this.routeName }) : null
     }
   }
 }

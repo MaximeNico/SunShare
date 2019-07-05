@@ -10,17 +10,35 @@
     <div class="row main-contain">
       <div class="col col-8">
         <div class="container-fluid block graph-conso">
-          <div class="head-block">
-            {{ graphConsoTitle }}
-            <moreInformationIcon />
+          <div class="row">
+            <div class="container">
+              <div class="head-block">
+                {{ graphConsoTitle }}
+                <moreInformationIcon />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <graphLine :dataGraph="tableGraphConso" :titleGraph="'test graph conso'" />
+            </div>
           </div>
         </div>
       </div>
       <div class="col col-4">
         <div class="container-fluid block graph-prev">
-          <div class="head-block">
-            {{ graphPreviTitle }}
-            <moreInformationIcon />
+          <div class="row">
+            <div class="container">
+              <div class="head-block">
+                {{ graphPreviTitle }}
+                <moreInformationIcon />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-12">
+              <graphLine :dataGraph="tableGraphPrev" :titleGraph="'test graph previ'" />
+            </div>
           </div>
         </div>
       </div>
@@ -29,15 +47,17 @@
       <div class="col col-12">
         <div class="container-fluid score-round-graph">
           <div class="row">
-            <div class="col col-5 round-graph"></div>
+            <div class="col col-5 round-graph">
+              <graphDoughnut :dataGraph="tableGraphScore" :titleGraph="null" />
+            </div>
             <div class="col col-7 score-legend">
               <div class="row score-text">
                 <p class="title">{{ scoreTitle }}</p>
                 <p class="main-text">{{ scoreText }}</p>
               </div>
-              <div class="row legend-roud-graph">
-
-              </div>
+              <!-- <div class="row legend-roud-graph">
+                Legends
+              </div> -->
             </div>
           </div>
         </div>
@@ -49,15 +69,39 @@
 <script>
 import adviceBlock from '@/components/adviceBlock'
 import moreInformationIcon from '@/components/icons/moreInformationIcon'
+import graphLine from '@/components/graphLine'
+import graphDoughnut from '@/components/graphDoughnut'
 
 export default {
   name: 'dashBoard',
   components: {
     adviceBlock,
-    moreInformationIcon
+    moreInformationIcon,
+    graphLine,
+    graphDoughnut
   },
   data: function () {
     return {
+      tableGraphConso: [
+        ['8h', 350, 450, 210],
+        ['10h', 340, 240, 220],
+        ['12h', 520, 280, 210],
+        ['14h', 560, 480, 320],
+        ['16h', 550, 500, 280],
+        ['18h', 430, 520, 250],
+        ['20h', 300, 450, 220]
+      ],
+      tableGraphPrev: [
+        ['8h', 120, 150, 250],
+        ['12h', 250, 360, 170],
+        ['16h', 200, 420, 150],
+        ['20h', 180, 190, 150]
+      ],
+      tableGraphScore: [
+        ['Injection', 25],
+        ['Soutirage', 15],
+        ['Auto-consommation', 60]
+      ],
       showAdvice: true,
       graphConsoTitle: 'Graphique de mes consommations',
       graphPreviTitle: 'Graphique prévisionnel',
@@ -89,6 +133,7 @@ export default {
       .head-block {
         color: #ffffff;
         font-size: 25px;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -97,6 +142,9 @@ export default {
     }
     .score-round-graph {
       background-color: #707070;
+      .round-graph {
+        padding: 10px 0 0 15px;
+      }
       .score-legend {
         .score-text {
           color: #ffffff;

@@ -5,7 +5,7 @@
         <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
-        <div class="col col-md-9 col-lg-10">
+        <div class="col col-md-9 col-lg-10 mainContainer">
           <div class="row header">
             <appHeader />
           </div>
@@ -38,23 +38,19 @@ export default {
 html, body, #app {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 #app {
-  /* font-family: 'Avenir', Helvetica, Arial, sans-serif; */
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #343434;
 }
 
-.container-fluid.app {
-  height: 100%;
+.mainContainer {
+  padding-bottom: 15px;
 }
-.container-fluid.app > div {
-  height: 100%;
-}
+
 .container-fluid.app > div > .menuSide {
   padding: 0;
 }

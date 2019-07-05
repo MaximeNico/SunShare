@@ -17,7 +17,7 @@
           </div>
         </div>
         <div class="row footer-button-contain">
-          <buttonGlobal :title="'Découvrir les bonnes pratiques'" :bgColor="'#F0CC00'" :fontSize="25"  />
+          <buttonGlobal :title="'Découvrir les bonnes pratiques'" :bgColor="'#F0CC00'" :fontSize="25" :routeName="'bestPractices'" />
         </div>
       </div>
     </div>
