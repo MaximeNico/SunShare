@@ -86,11 +86,42 @@ Afin d'éviter la mise en place de technique douteuse pour flouer le système no
 
 ## Création d'un mode simplifié
 
-On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit à minima posséder une insallation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenge que nous verrons dans la partie suivante. 
+On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit à minima posséder une insallation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenge que nous verrons dans la partie suivante.
 
 ## Établir les règles du jeu
 
-Soon...
+Dans une logique vertueuse pour l'environnement un principe de challenges et d'objectifs seront mis en place. On distinguera deux catégories. Ceux possédant la Boxénergie auront accès à l'ensemble des challenges et objectifs. Pour les utilisateurs en mode simplifié seul certains challenges et objectifs seront possibles.
+
+## Règles soumisses
+
+### Tirelire solaire
+Les joueurs disposant de panneaux solaires effectuent un total annuel/mensuel/quotidien de leur production / consommation d’énergie.
+La tirelire décompte les kwh soutirés (-) et injectés (+) sur le réseau.
+
+Pour les foyers n’ayant pas de toiture solaire, on devra construire un autre mode de jeu (voir plus bas).
+
+### Concours d’autoconsommation
+On lance un défi sur plusieurs semaines auprès de tous les joueurs qui réussirons à transférer leur profil de consommation dans les périodes de production solaire.
+On minimise le ratio entre énergie soutirée du réseau et énergie totale consommée en la période précédant le jeu et la période de jeu.
+
+Malus : pour les foyers consommant beaucoup d’électricité par individu.
+
+### Défis d’économie d’énergie
+Dans cette partie, les économies d’énergie sont réparties par domaines (chauffage, eau chaude, appareils électriques,…) et chaque joueur part de sa situation actuelle et engage des actions qui le font avancer dans le jeu. On atteint un niveau lorsque qu’on a effectué une grappe d’actions dans chaque domaine. Exemple :
+
+- Niveau 1 : Sobriété (conseils de grand mère) - baisser la température du logement à 19°C et 15°C en cas d’absence, mettre des mousseurs pour économiser l’eau chaude, dégivrer son congélateur une fois par an, brancher ses appareils sur des multiprises à interupteur, fermer les volets la nuit, éteindre la clim l’été, jeter toutes les lampes halogènes du foyer…
+- Niveau 2 : Efficacité 1 (investissement modéré) : investire dans un thermostat d’ambiance programmable, raccorder ses équipements ménagers sur l’eau chaude centrale, supprimer 1 appareil de plus de 1000W (micro-onde, four, plaque induction, grille pain, seche linge, seche cheveux …),
+- Niveau 3 : Efficacité 2 : Remplacer son chauffe eau (par un solaire, gaz ou thermodynamique), inverstir dans un poele à bois
+- Niveau 4 : isoler ses combles et ses murs en BBC rénovation
+- Malus : changer les fenètres sans isoler vos murs vous fait perdre des points, acheter une piscine chauffée…
+
+## Règles créées
+
+### Effacement de puissance
+
+Une des fonctionnalités supplémentaire est de pouvoir faire commuter des relais de puissance. Grâce à cette fonctionnalité et en ayant renseigner la puissance active des appareils connectés sur ce relais nous serions capable de calculer la puissance effacée sur le réseau. En fonction de la puissance totale effacée, de la période et du temps d'effacement l'utilisateur reporterai plus ou moins de points. Nous savons que les pics de puissance se produissent le soir aux alentours de 19h. Si l'utilisateur efface une grande partie de sa puissance à ce moment précis alors il remportera un maximum de point. On y appliquera un coefficient multiplicateur. Après une heure d'effacement passe en x2, si effacement à des heures "pic" x3, etc
+
+### Autres ??? 
 
 # EnergyBox
 
