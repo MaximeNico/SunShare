@@ -62,7 +62,18 @@ En attente d'éléments de Nico
 
 ## API ENEDIS
 
-En attente des éléments d'ENEDIS
+En attente des éléments d'ENEDIS.
+
+La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données vers un serveur. Le matériel mis à disposition par l'école ne nous permet pas de réaliser cette demande. Deux solutions sont alors possible :
+
+- L'entreprise Sunshare met en place un serveur OVH commum à l'ensemble des groupes. Cette initiative permet d'ouvrir une base de données MongoDB avec une IP fixe. De part la nature des bases No-SQL, l'entreprise Sunshare pourra créer une collection par groupe et ainsi rendre autonome chacun des groupes.
+
+- La première possibilité n'est pas possible à mettre en place. Dans ce cas nous prendrons l'initiative d'utiliser une infrastructure personnelle avec le raspberrypi dédié à la base de données (DBPI).
+
+### Choix final ?
+
+- [ ] solution 1
+- [ ] solution 2
 
 ## Portail sécurisé
 
