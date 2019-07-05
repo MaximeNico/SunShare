@@ -77,7 +77,12 @@ La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données ve
 
 ## Portail sécurisé
 
-Soon...
+Afin d'éviter la mise en place de technique douteuse pour flouer le système nous avons mis en oeuvre plusieurs items :
+
+- A la création du compte utilisateur récupération de l'ID du point de livraison (Identifiant du compteur). Cet identifiant sera stocké en base. Il ne peux y avoir deux numéro de compteur identique. A la création du compte nous interrogerons la base des compteurs pour savoir si celui-ci n'existe pas dans la base. Le cas échéant l'utilisateur ne pourra pas créer son compte. Il pourra utiliser les fonctions locales du raspberrypi mais ne pourra pas participer au Serious Game.
+
+- Pour éviter la modification des consommations et/ou production, on comparera les valeurs de références reçues par Enedis. On positionnera un seuil de tolérance avec la valeur certifiée par ENEDIS. Si l'écart est trop important les données locales ne seront pas prise en compte mais seulement les données ENEDIS 
+
 
 ## Création d'un mode simplifié
 
