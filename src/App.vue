@@ -2,10 +2,10 @@
   <div id="app">
     <div class="container-fluid app">
       <div class="row">
-        <div class="col col-3 menuSide">
+        <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
-        <div class="col col-9">
+        <div class="col col-md-9 col-lg-10">
           <div class="row header">
             <appHeader />
           </div>
@@ -57,7 +57,6 @@ html, body, #app {
 }
 .container-fluid.app > div > .menuSide {
   padding: 0;
-  max-width: 206px;
 }
 
 .header {
