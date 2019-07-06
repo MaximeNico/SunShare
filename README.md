@@ -46,6 +46,12 @@ Voici un schéma de l'architecture envisagée(V1) :
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V1 </em>
 
+### Architecture V2
+
+Voici un schéma de l'architecture retenue pour le projet(V2) :
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<em>Architecture V2 </em>
+
 # Serious Game
 
 ## Création des visuels
@@ -72,8 +78,6 @@ En attente d'éléments de Nico
 
 ## API ENEDIS
 
-En attente des éléments d'ENEDIS.
-
 La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données vers un serveur. Le matériel mis à disposition par l'école ne nous permet pas de réaliser cette demande. Deux solutions sont alors possible :
 
 - L'entreprise Sunshare met en place un serveur OVH commum à l'ensemble des groupes. Cette initiative permet d'ouvrir une base de données MongoDB avec une IP fixe. De part la nature des bases No-SQL, l'entreprise Sunshare pourra créer une collection par groupe et ainsi rendre autonome chacun des groupes.
@@ -82,8 +86,11 @@ La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données ve
 
 ### Choix final ?
 
-- [ ] solution 1
+- [x] solution 1
 - [ ] solution 2
+
+### Mise en ouvre de l'API
+
 
 ## Portail sécurisé
 
