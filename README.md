@@ -89,9 +89,6 @@ La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données ve
 - [x] solution 1
 - [ ] solution 2
 
-### Mise en ouvre de l'API
-
-
 ## Portail sécurisé
 
 Afin d'éviter la mise en place de technique douteuse pour flouer le système nous avons mis en oeuvre plusieurs items :
@@ -203,6 +200,8 @@ mongo
 
 Voila pour la partie base de données :thumbsup:
 
+EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.
+
 ### Partie serveur web (Docker)
 
 Commencer par installer la dépendance ffi :
@@ -222,3 +221,32 @@ sudo pip install docker-compose
 Nico la suite pour les deux composants
 
 Voila pour la partie docker :thumbsup:
+
+## Base de données MongoDB sur serveur OVH
+
+Soon...
+
+## Mise en oeuvre de l'API Enedis
+
+Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site [data-collect](https://datahub-enedis.fr/data-connect/)
+
+Après inscription, il faut créer une application. Plusieurs étapes sont nécessaire :
+- Renseigner le nom de l'application
+- Renseigner la description de l'application
+- L'adresse de redirection des données (Redirect URI), attention ça doit être une IP fixe uniquement :heavy_exclamation_mark:
+- Fournir une illustration de l'application (favicon)
+- Données souhaitées, affichées au client
+- Un email de contact
+- Un numéro de téléphone portable
+
+L'inscription terminée, il faut renseigner les développeurs actifs qui travailleront sur le sujet. Attention l'acceptation d'Enedis est très longue ! :zzz::zzz::zzz:
+
+Le fait de renseigner les développeurs permet de concevoir l'API dans un bac à sable. Les développeurs peuvent ainsi tester et développer l'ensemble de l'API avant la mise en production.
+
+Pour voir l'ensemble de l'API développé pour l'occasion se rendre dans le dossier ...
+
+Pour terminer, l'application est mise en production côté Enedis.
+
+Si tout ce passe bien et que le service Enedis fonctionne :trollface: les requêtes devrait renvoyer les informations attendues.
+
+## API application
