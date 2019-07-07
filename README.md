@@ -86,7 +86,7 @@ La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données ve
 
 ### Choix final ?
 
-- [x] solution 1
+- [x] solution 1 (validé le 05/07/19)
 - [ ] solution 2
 
 ## Portail sécurisé
@@ -160,7 +160,7 @@ Soon...
 
 ## Boitier 3D
 
-Pour répondre à la demande du boitier du raspberry pi rackable, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique. 
+Pour répondre à la demande du boitier du raspberry pi rackable, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.
 
 # Réalisation
 
@@ -185,7 +185,7 @@ Répéter l'opération pour le second raspberrypi
 
 ### Partie base de données
 
-EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.
+**EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.**
 
 Pour installer la base de données il faut faire les commandes suivantes :
 
