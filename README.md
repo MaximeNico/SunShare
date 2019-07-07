@@ -185,6 +185,8 @@ Répéter l'opération pour le second raspberrypi
 
 ### Partie base de données
 
+EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.
+
 Pour installer la base de données il faut faire les commandes suivantes :
 
 ```
