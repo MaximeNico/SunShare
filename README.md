@@ -43,13 +43,13 @@ Voici un schéma de l'architecture envisagée en sa version initiale :
 ### Architecture V1
 
 Voici un schéma de l'architecture envisagée(V1) :
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V1 </em>
 
 ### Architecture V2
 
 Voici un schéma de l'architecture retenue pour le projet(V2) :
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV2.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V2 </em>
 
 # Serious Game
