@@ -291,7 +291,7 @@ Pour valider la bonne implémentation on essaie de récupérer les données de c
     "usage_point": [
         {
             "meter_reading": {
-                "usage_point_id": "22516914714270",
+                "usage_point_id": "XXXXXXXXXXXXXX",
                 "start": "2019-07-06",
                 "end": "2019-07-08",
                 "reading_type": {
