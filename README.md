@@ -39,21 +39,24 @@ Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+.
 ### Architecture initiale
 
 Voici un schéma de l'architecture envisagée en sa version initiale :
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/ArchitectureV0.png" alt="ArchitectureV0" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V0 </em>
-
+</p>
 ### Architecture V1
 
 Voici un schéma de l'architecture envisagée(V1) :
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V1 </em>
-
+</p>
 ### Architecture V2
 
 Voici un schéma de l'architecture retenue pour le projet(V2) :
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV2.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V2 </em>
-
+</p>
 **Cette architecture est l'architecture finale pour le projet**. Nous concervons l'utilisation de docker pour conserver l'indépendance des services. Un service sera dédié au serious game et l'autre à la partie Boxénergie. Cette architecture se veux autonome. Si le service Serious Game ne fonctionne pas pour cause de défaut de connexion internet, le service Boxénergie continuera lui de fonctionner. La réciproque est vraie. Il y aura également une base locale pour la Boxénergie (partie TIC et compteur à impulsions). Cette base sera liée au mode dégradé (off-line) si l'utilisateur ne veux pas participer au serious game.
 
 
@@ -65,16 +68,16 @@ Pour cette partie il nous a été demandé de créer deux interfaces graphiques 
 - Une dédiée à l'équipe
 ### Page  utilisateur
 Voici la maquette de la page :
-
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(Dashboard).png" alt="Maquette User" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
-
+</p>
 Cette page comprend un menu, des encarts de conseil pour améliorer son score et des graphiques.
 
 ### Page groupes
 Voici la maquette de la page :
-
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/develop/ressource/Web%201920%20%E2%80%93%20Interface%20utilisateur%20(TeamBoard).png" alt="Maquette Team" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
-
+</p>
 Cette page comprend le classement de son équipe avec le podium de l'équipe et un classement global avec l'affichage des 3 meilleures équipes.
 
 ## Base de données
