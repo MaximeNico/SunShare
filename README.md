@@ -285,7 +285,9 @@ Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessair
 
 #### Test récupération de données
 
-Pour valider la bonne implémentation on essaie de récupérer les données de consommation. En voici le retour :
+Pour valider la bonne implémentation on essaie de récupérer les données de consommation par jour.
+
+En voici le retour :
 
 ```json
 {
@@ -320,6 +322,221 @@ Pour valider la bonne implémentation on essaie de récupérer les données de c
   ]
 }
 
+```
+Puis toutes les 30min :
+
+```json
+{
+    "usage_point": [
+        {
+            "meter_reading": {
+                "usage_point_id": "XXXXXXXXXXXXXX",
+                "start": "2019-07-07",
+                "end": "2019-07-08",
+                "reading_type": {
+                    "measurement_kind": "power",
+                    "interval_length": "1800",
+                    "unit": "W",
+                    "aggregate": "average"
+                },
+                "interval_reading": [
+                    {
+                        "value": "2723",
+                        "rank": "1"
+                    },
+                    {
+                        "value": "110",
+                        "rank": "2"
+                    },
+                    {
+                        "value": "179",
+                        "rank": "3"
+                    },
+                    {
+                        "value": "64",
+                        "rank": "4"
+                    },
+                    {
+                        "value": "79",
+                        "rank": "5"
+                    },
+                    {
+                        "value": "97",
+                        "rank": "6"
+                    },
+                    {
+                        "value": "64",
+                        "rank": "7"
+                    },
+                    {
+                        "value": "113",
+                        "rank": "8"
+                    },
+                    {
+                        "value": "63",
+                        "rank": "9"
+                    },
+                    {
+                        "value": "46",
+                        "rank": "10"
+                    },
+                    {
+                        "value": "112",
+                        "rank": "11"
+                    },
+                    {
+                        "value": "48",
+                        "rank": "12"
+                    },
+                    {
+                        "value": "48",
+                        "rank": "13"
+                    },
+                    {
+                        "value": "109",
+                        "rank": "14"
+                    },
+                    {
+                        "value": "1175",
+                        "rank": "15"
+                    },
+                    {
+                        "value": "895",
+                        "rank": "16"
+                    },
+                    {
+                        "value": "254",
+                        "rank": "17"
+                    },
+                    {
+                        "value": "314",
+                        "rank": "18"
+                    },
+                    {
+                        "value": "309",
+                        "rank": "19"
+                    },
+                    {
+                        "value": "280",
+                        "rank": "20"
+                    },
+                    {
+                        "value": "95",
+                        "rank": "21"
+                    },
+                    {
+                        "value": "110",
+                        "rank": "22"
+                    },
+                    {
+                        "value": "63",
+                        "rank": "23"
+                    },
+                    {
+                        "value": "48",
+                        "rank": "24"
+                    },
+                    {
+                        "value": "192",
+                        "rank": "25"
+                    },
+                    {
+                        "value": "97",
+                        "rank": "26"
+                    },
+                    {
+                        "value": "114",
+                        "rank": "27"
+                    },
+                    {
+                        "value": "255",
+                        "rank": "28"
+                    },
+                    {
+                        "value": "160",
+                        "rank": "29"
+                    },
+                    {
+                        "value": "159",
+                        "rank": "30"
+                    },
+                    {
+                        "value": "219",
+                        "rank": "31"
+                    },
+                    {
+                        "value": "227",
+                        "rank": "32"
+                    },
+                    {
+                        "value": "300",
+                        "rank": "33"
+                    },
+                    {
+                        "value": "206",
+                        "rank": "34"
+                    },
+                    {
+                        "value": "260",
+                        "rank": "35"
+                    },
+                    {
+                        "value": "239",
+                        "rank": "36"
+                    },
+                    {
+                        "value": "227",
+                        "rank": "37"
+                    },
+                    {
+                        "value": "147",
+                        "rank": "38"
+                    },
+                    {
+                        "value": "205",
+                        "rank": "39"
+                    },
+                    {
+                        "value": "211",
+                        "rank": "40"
+                    },
+                    {
+                        "value": "250",
+                        "rank": "41"
+                    },
+                    {
+                        "value": "93",
+                        "rank": "42"
+                    },
+                    {
+                        "value": "242",
+                        "rank": "43"
+                    },
+                    {
+                        "value": "229",
+                        "rank": "44"
+                    },
+                    {
+                        "value": "236",
+                        "rank": "45"
+                    },
+                    {
+                        "value": "287",
+                        "rank": "46"
+                    },
+                    {
+                        "value": "2164",
+                        "rank": "47"
+                    },
+                    {
+                        "value": "3586",
+                        "rank": "48"
+                    }
+                ]
+            }
+        }
+    ]
+}
 ```
 
 maintenant que nous avons compris comment fonctionner la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
