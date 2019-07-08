@@ -58,7 +58,7 @@ Voici un schéma de l'architecture envisagée(V1) :
 ### Architecture V2
 
 <p align="justify">
-**Cette architecture est l'architecture finale pour le projet**. Nous concervons l'utilisation de docker pour conserver l'indépendance des services. Un service sera dédié au serious game et l'autre à la partie Boxénergie. Cette architecture se veux autonome. Si le service Serious Game ne fonctionne pas pour cause de défaut de connexion internet, le service Boxénergie continuera lui de fonctionner. La réciproque est vraie. Il y aura également une base locale pour la Boxénergie (partie TIC et compteur à impulsions). Cette base sera liée au mode dégradé (off-line) si l'utilisateur ne veux pas participer au serious game.
+Cette architecture est l'architecture finale pour le projet. Nous concervons l'utilisation de docker pour conserver l'indépendance des services. Un service sera dédié au serious game et l'autre à la partie Boxénergie. Cette architecture se veux autonome. Si le service Serious Game ne fonctionne pas pour cause de défaut de connexion internet, le service Boxénergie continuera lui de fonctionner. La réciproque est vraie. Il y aura également une base locale pour la Boxénergie (partie TIC et compteur à impulsions). Cette base sera liée au mode dégradé (off-line) si l'utilisateur ne veux pas participer au serious game.
 </p>
 
 Voici un schéma de l'architecture retenue pour le projet(V2) :
