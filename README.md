@@ -250,7 +250,77 @@ L'inscription terminée, il faut renseigner les développeurs actifs qui travail
 
 Le fait de renseigner les développeurs permet de concevoir l'API dans un bac à sable. Les développeurs peuvent ainsi tester et développer l'ensemble de l'API avant la mise en production.
 
-Pour voir l'ensemble de l'API développé pour l'occasion se rendre dans le dossier ...
+###Test bac à sable
+
+#### Consentement client et token
+En premier lieu il faut récupérer le consentement client matérialisé par un "code" pour ce faire il faut renseigner les éléments dans l'URL suivante :
+```
+https://gw.hml.api.enedis.fr/group/espace-particuliers/consentement-linky/oauth2/authorize?client_id=[client_id]&state=[state]&duration=[duration]&response_type=code&redirect_uri=[redirect_URI]
+```
+- client-id : identifiant unique client
+- state : chaine de caractère aléatoire
+- duration : durée du consentement (format ISO8601)
+- redirect_uri : Url de redirection vers lequel l'utilisateur accedera à l'application.
+
+Dans l'url de sortie on obtient les informations suivantes (les valeurs ne sont plus actives) :
+```
+https://linky.sunshare.fr/?code=5ruXvt7eM2w262Hhf5IW7fGWExr82V&state=abcdef&usage_point_id=22516914714270
+```
+On récupère le code qui nous permettra de faire la demande de Token et l'usage_point_id qui correspond à l'identifiant client.
+
+La troisème étape est l'obtention du Token
+
+Pour ce faire utiliser PostMan, dispo ici.
+
+On renseigne les paramètres suivant :
+
+
+Il est important de conserver les données suivantes :
+
+- access_token : c'est le token qui sera utilisé dans toutes les demandes d'informations à destination de l'API d'Enedis. Attention il est valide uniquement pendant 3h30
+- refresh_token : c'est le token qui sera utilisé pour faire une nouvelle demande d'access_token quand celui-ci sera expiré. Le refresh_token est valable un an.
+
+Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessaire pour mettre en place la demande de données
+
+#### Test récupération de données
+
+Pour valider la bonne implémentation on essaie de récupérer les données de consommation. En voici le retour :
+
+```json
+{
+    "usage_point": [
+        {
+            "meter_reading": {
+                "usage_point_id": "22516914714270",
+                "start": "2019-07-06",
+                "end": "2019-07-08",
+                "reading_type": {
+                    "measurement_kind": "energy",
+                    "interval_length": "86400",
+                    "unit": "Wh",
+                    "aggregate": "sum"
+                },
+                "interval_reading": [
+                    {
+                        "value": "8357",
+                        "rank": "1"
+                    },
+                    {
+                        "value": "8851",
+                        "rank": "2"
+                    },
+                    {
+                      "value": "12498",
+                      "rank": "3"
+                  }
+              ]
+          }
+      }
+  ]
+}
+
+```
+
 
 Pour terminer, l'application est mise en production côté Enedis.
 
