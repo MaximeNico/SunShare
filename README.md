@@ -498,22 +498,22 @@ Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté
 ## Création d'une alerte sonore et/ou visuelle
 
 Nous avons choisi de mettre en oeuvre l'alerte sonore. Comme vu précédement sur la partie boitier on peut implementer le buzzer directement dans le boitier.
-Le script JS est accessible dans le dossier 'Buzzer'. 
+Le script JS est accessible dans le dossier 'Buzzer'.
 
 
 # Réalisation
 
 ## Installation et configuration des Raspberrypi
 
-<p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
+<p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous sur : https://www.raspberrypi.org/downloads/raspbian/ et télécharger la version lite.
 Une fois le .zip téléchargé ne pas de le dézipper.
-Télécharger [Ethcer](https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
+Télécharger Ethcer(https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
 Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
 Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
 
 Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
 
-Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+Si vous êtes sous windows télécharger la dernière version de putty:(https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
 
