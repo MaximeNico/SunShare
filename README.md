@@ -247,7 +247,7 @@ Soon...
 
 ## Mise en oeuvre de l'API Enedis
 
-Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site [data-collect](https://datahub-enedis.fr/data-connect/)
+<p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site [data-collect](https://datahub-enedis.fr/data-connect/)
 
 Après inscription, il faut créer une application. Plusieurs étapes sont nécessaire :
 - Renseigner le nom de l'application
@@ -260,7 +260,7 @@ Après inscription, il faut créer une application. Plusieurs étapes sont néce
 
 L'inscription terminée, il faut renseigner les développeurs actifs qui travailleront sur le sujet. Attention l'acceptation d'Enedis est très longue ! :zzz::zzz::zzz:
 
-Le fait de renseigner les développeurs permet de concevoir l'API dans un bac à sable. Les développeurs peuvent ainsi tester et développer l'ensemble de l'API avant la mise en production.
+Le fait de renseigner les développeurs permet de concevoir l'API dans un bac à sable. Les développeurs peuvent ainsi tester et développer l'ensemble de l'API avant la mise en production.</p>
 
 ### Test bac à sable
 
@@ -288,12 +288,12 @@ On renseigne les paramètres suivants :
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" height = 500>
 </p>
-Il est important de conserver les données suivantes :
+<p align="justify">Il est important de conserver les données suivantes :
 
 - access_token : c'est le token qui sera utilisé dans toutes les demandes d'informations à destination de l'API d'Enedis. Attention il est valide uniquement pendant 3h30
 - refresh_token : c'est le token qui sera utilisé pour faire une nouvelle demande d'access_token quand celui-ci sera expiré. Le refresh_token est valable un an.
 
-Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessaire pour mettre en place la demande de données
+Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessaire pour mettre en place la demande de données</p>
 
 #### Test récupération de données
 
@@ -551,15 +551,15 @@ Puis toutes les 30min :
 }
 ```
 
-maintenant que nous avons compris comment fonctionne la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
+<p align="justify">maintenant que nous avons compris comment fonctionne la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.</p>
 
 ### Mise en oeuvre de l'API
-
+<p align="justify">
 Voir fichier dispo dans le dossier 'API ENEDIS'
 
 Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
 
 
 Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.
-
+</p>
 ## API application
