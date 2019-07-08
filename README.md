@@ -513,7 +513,7 @@ Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
 
 Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
 
-Si vous êtes sous windows télécharger la dernière version de putty:(https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
 
