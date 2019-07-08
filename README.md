@@ -554,12 +554,12 @@ Puis toutes les 30min :
 <p align="justify">maintenant que nous avons compris comment fonctionne la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.</p>
 
 ### Mise en oeuvre de l'API
-<p align="justify">
-Voir fichier dispo dans le dossier 'API ENEDIS'
+
+<p align="justify">Voir fichier dispo dans le dossier 'API ENEDIS'
 
 Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
 
 
-Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.
-</p>
+Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.</p>
+
 ## API application
