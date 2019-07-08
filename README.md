@@ -160,7 +160,7 @@ Soon...
 
 ## Boitier 3D
 
-Pour répondre à la demande du boitier du raspberry pi rackable, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.
+Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.
 
 # Réalisation
 
@@ -236,7 +236,7 @@ Après inscription, il faut créer une application. Plusieurs étapes sont néce
 - Renseigner le nom de l'application
 - Renseigner la description de l'application
 - L'adresse de redirection des données (Redirect URI), attention ça doit être une IP fixe uniquement :heavy_exclamation_mark:
-- Fournir une illustration de l'application (favicon)
+- Fournir une illustration de l'application (favicon), elle pourra être modifiée plus tard.
 - Données souhaitées, affichées au client
 - Un email de contact
 - Un numéro de téléphone portable
