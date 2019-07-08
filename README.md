@@ -40,7 +40,7 @@ Les objectifs concrets de ce projet sont :
 Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+. La demande initiale était d'utiliser ces deux RaspberryPi en tant qu' "utilisateurs". Au vu de la demande de produire un code "écoconception",nous avons choisi de les exploiter de manière différentes. La demande initiale concernait la mise en place d'un serveur MongoAtlas. Au vu de l'implantation des serveurs (US) et de la route de l'ensemble des paquets, il ne nous parrait pas judicieux d'utiliser cette architecture. Nous avons donc utilisé le premier comme base de données No-SQL (MogoDB). Le second est utilisé comme serveur web avec Docker. L'enjeu sur le second est de mettre en place deux containers. Le premier conteneur servira à faire tourner la Boxénergie et le second le Serious Game. L'avantage est de créer un environnement facilement réplicable et simple à mettre en oeuvre. De plus docker étant opensource et adaptable à n'importe quel environnement de développement les différents hackathons suivants ne seront pas pénalisés par le choix d'une technologie fermée.
 </p>
 
-[MongoDB](https://www.mongodb.com/)
+[MongoDB](https://www.mongodb.com/),
 [Docker](https://www.docker.com/)
 
 ### Architecture initiale
@@ -175,84 +175,6 @@ Soon...
 Préparer les éléments (GCE Electronics USB TIC & GPIO compteur à impulsions)
 
 ## Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
-
-Soon...
-
-## Création d'une alerte sonore et/ou visuelle
-
-Soon...
-
-## Boitier 3D
-
-<p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
-
-# Réalisation
-
-## Installation et configuration des Raspberrypi
-
-<p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
-Une fois le .zip téléchargé ne pas de le dézipper.
-Télécharger [Ethcer](https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
-Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
-Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
-
-Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
-
-Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
-
-Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
-
-```
-sudo apt-get update && sudo apt-get upgrade
-```
-Répéter l'opération pour le second raspberrypi
-
-### Partie base de données
-
-**EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.**
-
-Pour installer la base de données il faut faire les commandes suivantes :
-
-```
-sudo apt install mongodb
-sudo systemctl enable mongodb
-```
-
-Pour tester si la base est bien active effectuer la commande :
-
-```
-mongo
-```
-
-Voila pour la partie base de données :thumbsup:
-
-EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.
-
-### Partie serveur web (Docker)
-
-Commencer par installer la dépendance ffi :
-
-```
-libffi-dev
-```
-
-Pour installer Docker et Docker-compose utiliser les ligne suivantes :
-```
-sudo apt install docker-ce
-sudo usermod -aG docker pi
-sudo apt-get install -y python python-pip
-sudo pip install docker-compose
-```
-
-Nico la suite pour les deux composants
-
-Voila pour la partie docker :thumbsup:
-
-## Base de données MongoDB sur serveur OVH
-
-Soon...
-
-## Mise en oeuvre de l'API Enedis
 
 <p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site [data-collect](https://datahub-enedis.fr/data-connect/)
 
@@ -567,5 +489,82 @@ Voir fichier dispo dans le dossier 'API ENEDIS'
 
 <p align="justify">Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
 Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.</p>
+
+## Création d'une alerte sonore et/ou visuelle
+
+Soon...
+
+## Boitier 3D
+
+<p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
+
+# Réalisation
+
+## Installation et configuration des Raspberrypi
+
+<p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
+Une fois le .zip téléchargé ne pas de le dézipper.
+Télécharger [Ethcer](https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
+Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
+Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
+
+Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
+
+Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
+
+```
+sudo apt-get update && sudo apt-get upgrade
+```
+Répéter l'opération pour le second raspberrypi
+
+### Partie base de données
+
+**EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.**
+
+Pour installer la base de données il faut faire les commandes suivantes :
+
+```
+sudo apt install mongodb
+sudo systemctl enable mongodb
+```
+
+Pour tester si la base est bien active effectuer la commande :
+
+```
+mongo
+```
+
+Voila pour la partie base de données :thumbsup:
+
+EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur OVH.
+
+### Partie serveur web (Docker)
+
+Commencer par installer la dépendance ffi :
+
+```
+libffi-dev
+```
+
+Pour installer Docker et Docker-compose utiliser les ligne suivantes :
+```
+sudo apt install docker-ce
+sudo usermod -aG docker pi
+sudo apt-get install -y python python-pip
+sudo pip install docker-compose
+```
+
+Nico la suite pour les deux composants
+
+Voila pour la partie docker :thumbsup:
+
+## Base de données MongoDB sur serveur OVH
+
+Soon...
+
+
+
 
 ## API application
