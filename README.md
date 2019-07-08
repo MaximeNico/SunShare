@@ -112,16 +112,16 @@ Afin d'éviter la mise en place de technique douteuse pour flouer le système no
 
 - <p align="justify">A la création du compte utilisateur récupération de l'ID du point de livraison (Identifiant du compteur). Cet identifiant sera stocké en base. Il ne peux y avoir deux numéro de compteur identique. A la création du compte nous interrogerons la base des compteurs pour savoir si celui-ci n'existe pas dans la base. Le cas échéant l'utilisateur ne pourra pas créer son compte. Il pourra utiliser les fonctions locales du raspberrypi mais ne pourra pas participer au Serious Game.</p>
 
-- Pour éviter la modification des consommations et/ou production, on comparera les valeurs de références reçues par Enedis. On positionnera un seuil de tolérance avec la valeur certifiée par ENEDIS. Si l'écart est trop important les données locales ne seront pas prise en compte mais seulement les données ENEDIS
+- <p align="justify">Pour éviter la modification des consommations et/ou production, on comparera les valeurs de références reçues par Enedis. On positionnera un seuil de tolérance avec la valeur certifiée par ENEDIS. Si l'écart est trop important les données locales ne seront pas prise en compte mais seulement les données ENEDIS</p>
 
 
 ## Création d'un mode simplifié
 
-On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit à minima posséder une insallation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenge que nous verrons dans la partie suivante.
+<p align="justify">On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit à minima posséder une insallation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenge que nous verrons dans la partie suivante.</p>
 
 ## Établir les règles du jeu
 
-Dans une logique vertueuse pour l'environnement un principe de challenges et d'objectifs seront mis en place. On distinguera deux catégories. Ceux possédant la Boxénergie auront accès à l'ensemble des challenges et objectifs. Pour les utilisateurs en mode simplifié seul certains challenges et objectifs seront possibles.
+<p align="justify">Dans une logique vertueuse pour l'environnement un principe de challenges et d'objectifs seront mis en place. On distinguera deux catégories. Ceux possédant la Boxénergie auront accès à l'ensemble des challenges et objectifs. Pour les utilisateurs en mode simplifié seul certains challenges et objectifs seront possibles.</p>
 
 ## Règles soumisses
 
@@ -150,7 +150,7 @@ Dans cette partie, les économies d’énergie sont réparties par domaines (cha
 
 ### Effacement de puissance
 
-Une des fonctionnalités supplémentaire est de pouvoir faire commuter des relais de puissance. Grâce à cette fonctionnalité et en ayant renseigner la puissance active des appareils connectés sur ce relais nous serions capable de calculer la puissance effacée sur le réseau. En fonction de la puissance totale effacée, de la période et du temps d'effacement l'utilisateur reporterai plus ou moins de points. Nous savons que les pics de puissance se produissent le soir aux alentours de 19h. Si l'utilisateur efface une grande partie de sa puissance à ce moment précis alors il remportera un maximum de point. On y appliquera un coefficient multiplicateur. Après une heure d'effacement passe en x2, si effacement à des heures "pic" x3, etc
+<p align="justify">Une des fonctionnalités supplémentaire est de pouvoir faire commuter des relais de puissance. Grâce à cette fonctionnalité et en ayant renseigner la puissance active des appareils connectés sur ce relais nous serions capable de calculer la puissance effacée sur le réseau. En fonction de la puissance totale effacée, de la période et du temps d'effacement l'utilisateur reporterai plus ou moins de points. Nous savons que les pics de puissance se produissent le soir aux alentours de 19h. Si l'utilisateur efface une grande partie de sa puissance à ce moment précis alors il remportera un maximum de point. On y appliquera un coefficient multiplicateur. Après une heure d'effacement passe en x2, si effacement à des heures "pic" x3, etc</p>
 
 ### Autres ???
 
@@ -169,7 +169,7 @@ Préparer les éléments (GCE Electronics USB TIC & GPIO compteur à impulsions)
 
 ## Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
 
-En attente des éléments d'ENEDIS
+Soon...
 
 ## Création d'une alerte sonore et/ou visuelle
 
@@ -177,13 +177,13 @@ Soon...
 
 ## Boitier 3D
 
-Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.
+<p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
 
 # Réalisation
 
 ## Installation et configuration des Raspberrypi
 
-Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
+<p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous [ici](https://www.raspberrypi.org/downloads/raspbian/) et télécharger la version lite.
 Une fois le .zip téléchargé ne pas de le dézipper.
 Télécharger [Ethcer](https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
 Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
@@ -193,7 +193,7 @@ Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel addition
 
 Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
-Une fois connecté mettre à jour la dernière version des paquets avec la ligne :
+Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
 
 ```
 sudo apt-get update && sudo apt-get upgrade
