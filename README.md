@@ -13,7 +13,7 @@ Pour bien comprendre l'existant voici quelques liens :
 3. [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" style="margin-top: 5px" height=30></a>
 4. [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" style="margin-top: 5px" height=30></a>
 
-<p align="justify">
+
 Les objectifs concrets de ce projet sont :
 1. Créer une démo fonctionnelle du "Serious Game"
   - Créer une interface utilisateur/équipe/administrateur
@@ -30,7 +30,7 @@ Les objectifs concrets de ce projet sont :
 3. Réaliser certaines des fonctionnalités supplémentaires (si le temps nous le permet)
   - Création de compte, nouvel utilisateur
   - Commande de déclenchement électrique (réalisation d'effacement de puissance)
-  </p>
+
 
 ## Architecture
 
