@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid app">
-      <div class="row">
+      <div class="row app">
         <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
@@ -36,6 +36,7 @@ export default {
 <style>
 
 html, body, #app {
+  height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -49,6 +50,14 @@ html, body, #app {
 
 .mainContainer {
   padding-bottom: 15px;
+}
+
+.container-fluid.app {
+  height: 100%;
+}
+
+.container-fluid.app > .row.app {
+  height: 100%;
 }
 
 .container-fluid.app > div > .menuSide {
