@@ -176,7 +176,7 @@ Préparer les éléments (GCE Electronics USB TIC & GPIO compteur à impulsions)
 
 ## Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
 
-<p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site : https://datahub-enedis.fr/data-connect/ 
+<p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site : https://datahub-enedis.fr/data-connect/
 
 Après inscription, il faut créer une application. Plusieurs étapes sont nécessaire :
 - Renseigner le nom de l'application
@@ -490,13 +490,16 @@ Voir fichier dispo dans le dossier 'API ENEDIS'
 <p align="justify">Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
 Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.</p>
 
-## Création d'une alerte sonore et/ou visuelle
-
-Soon...
 
 ## Boitier 3D
 
 <p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un [modèle existant](https://www.thingiverse.com/make:529106) qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en [PLA](http://www.green-desk.net/le-pla-cest-quoi/). Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
+
+## Création d'une alerte sonore et/ou visuelle
+
+Nous avons choisi de mettre en oeuvre l'alerte sonore. Comme vu précédement sur la partie boitier on peut implementer le buzzer directement dans le boitier.
+Le script JS est accessible dans le dossier 'Buzzer'. 
+
 
 # Réalisation
 
