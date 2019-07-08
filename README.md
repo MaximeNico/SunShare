@@ -13,6 +13,7 @@ Pour bien comprendre l'existant voici quelques liens :
 3. [Dashboard, interface locale utilisateur (Boxénergie)](https://github.com/sunsharebox/sunshare-APP)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" style="margin-top: 5px" height=30></a>
 4. [Connexion en javascript aux capteurs (Boxénergie)](https://github.com/sunsharebox/sunshare-API)<img src="https://github.blog/wp-content/uploads/2013/04/074d0b06-a5e3-11e2-8b7f-9f09eb2ddfae.jpg?resize=1234%2C701" alt="Git Logo" style="margin-top: 5px" height=30></a>
 
+<p align="justify">
 Les objectifs concrets de ce projet sont :
 1. Créer une démo fonctionnelle du "Serious Game"
   - Créer une interface utilisateur/équipe/administrateur
@@ -29,6 +30,7 @@ Les objectifs concrets de ce projet sont :
 3. Réaliser certaines des fonctionnalités supplémentaires (si le temps nous le permet)
   - Création de compte, nouvel utilisateur
   - Commande de déclenchement électrique (réalisation d'effacement de puissance)
+  </p>
 
 ## Architecture
 
@@ -95,11 +97,13 @@ En attente d'éléments de Nico
 
 ## API ENEDIS
 
+<p align="justify">
 La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données vers un serveur. Le matériel mis à disposition par l'école ne nous permet pas de réaliser cette demande. Deux solutions sont alors possible :
 
 - L'entreprise Sunshare met en place un serveur OVH commum à l'ensemble des groupes. Cette initiative permet d'ouvrir une base de données MongoDB avec une IP fixe. De part la nature des bases No-SQL, l'entreprise Sunshare pourra créer une collection par groupe et ainsi rendre autonome chacun des groupes.
 
 - La première possibilité n'est pas possible à mettre en place. Dans ce cas nous prendrons l'initiative d'utiliser une infrastructure personnelle avec le raspberrypi dédié à la base de données (DBPI).
+</p>
 
 ### Choix final ?
 
@@ -288,6 +292,7 @@ On renseigne les paramètres suivants :
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" height = 500>
 </p>
+
 <p align="justify">Il est important de conserver les données suivantes :
 
 - access_token : c'est le token qui sera utilisé dans toutes les demandes d'informations à destination de l'API d'Enedis. Attention il est valide uniquement pendant 3h30
