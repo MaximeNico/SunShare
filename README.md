@@ -250,7 +250,7 @@ L'inscription terminée, il faut renseigner les développeurs actifs qui travail
 
 Le fait de renseigner les développeurs permet de concevoir l'API dans un bac à sable. Les développeurs peuvent ainsi tester et développer l'ensemble de l'API avant la mise en production.
 
-###Test bac à sable
+### Test bac à sable
 
 #### Consentement client et token
 En premier lieu il faut récupérer le consentement client matérialisé par un "code" pour ce faire il faut renseigner les éléments dans l'URL suivante :
@@ -324,7 +324,7 @@ Pour valider la bonne implémentation on essaie de récupérer les données de c
 
 maintenant que nous avons compris comment fonctionner la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
 
-###Mise en oeuvre de l'API
+### Mise en oeuvre de l'API
 
 Voir fichier dispo dans le dossier 'API ENEDIS'
 
