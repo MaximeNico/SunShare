@@ -270,10 +270,11 @@ On récupère le code qui nous permettra de faire la demande de Token et l'usage
 
 La troisème étape est l'obtention du Token
 
-Pour ce faire utiliser PostMan, dispo ici.
+Pour ce faire utiliser PostMan, dispo [ici](https://www.getpostman.com/).
 
-On renseigne les paramètres suivant :
+On renseigne les paramètres suivants :
 
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 
 Il est important de conserver les données suivantes :
 
