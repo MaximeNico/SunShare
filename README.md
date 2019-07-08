@@ -274,7 +274,7 @@ Pour ce faire utiliser PostMan, dispo [ici](https://www.getpostman.com/).
 
 On renseigne les paramètres suivants :
 
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<img align="center" src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 
 Il est important de conserver les données suivantes :
 
@@ -539,7 +539,7 @@ Puis toutes les 30min :
 }
 ```
 
-maintenant que nous avons compris comment fonctionner la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
+maintenant que nous avons compris comment fonctionne la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
 
 ### Mise en oeuvre de l'API
 
