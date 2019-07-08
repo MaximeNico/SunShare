@@ -37,11 +37,10 @@ Les objectifs concrets de ce projet sont :
 <a href="https://www.raspberrypi.org"><img src="https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo.png" alt="Raspberry Pi Logo" align="right" style="margin-left: 25px; margin-bottom: 10px" height=100></a>
 
 <p align="justify">
-Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+. La demande initiale était d'utiliser ces deux RaspberryPi en tant qu' "utilisateurs". Au vu de la demande de produire un code "écoconception",nous avons choisi de les exploiter de manière différentes. La demande initiale concernait la mise en place d'un serveur MongoAtlas. Au vu de l'implantation des serveurs (US) et de la route de l'ensemble des paquets, il ne nous parrait pas judicieux d'utiliser cette architecture. Nous avons donc utilisé le premier comme base de données No-SQL </p>
-([MongoDB](https://www.mongodb.com/)).
-<p align="justify"> Le second est utilisé comme serveur web avec </p>[Docker](https://www.docker.com/).<p align="justify"> L'enjeu sur le second est de mettre en place deux containers. Le premier conteneur servira à faire tourner la Boxénergie et le second le Serious Game. L'avantage est de créer un environnement facilement réplicable et simple à mettre en oeuvre. De plus docker étant opensource et adaptable à n'importe quel environnement de développement les différents hackathons suivants ne seront pas pénalisés par le choix d'une technologie fermée.
+Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+. La demande initiale était d'utiliser ces deux RaspberryPi en tant qu' "utilisateurs". Au vu de la demande de produire un code "écoconception",nous avons choisi de les exploiter de manière différentes. La demande initiale concernait la mise en place d'un serveur MongoAtlas. Au vu de l'implantation des serveurs (US) et de la route de l'ensemble des paquets, il ne nous parrait pas judicieux d'utiliser cette architecture. Nous avons donc utilisé le premier comme base de données No-SQL (MogoDB). Le second est utilisé comme serveur web avec Docker. L'enjeu sur le second est de mettre en place deux containers. Le premier conteneur servira à faire tourner la Boxénergie et le second le Serious Game. L'avantage est de créer un environnement facilement réplicable et simple à mettre en oeuvre. De plus docker étant opensource et adaptable à n'importe quel environnement de développement les différents hackathons suivants ne seront pas pénalisés par le choix d'une technologie fermée.
 </p>
-
+[MongoDB](https://www.mongodb.com/)
+[Docker](https://www.docker.com/)
 ### Architecture initiale
 
 Voici un schéma de l'architecture envisagée en sa version initiale :
