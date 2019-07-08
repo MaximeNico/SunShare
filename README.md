@@ -176,7 +176,7 @@ Préparer les éléments (GCE Electronics USB TIC & GPIO compteur à impulsions)
 
 ## Mettre en place l'API ENEDIS pour le point de livraison de l'utilisateur.
 
-<p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site [data-collect](https://datahub-enedis.fr/data-connect/)
+<p align="justify">Pour mettre en oeuvre l'API Enedis il est nécessaire de posséder un compte sur le site : https://datahub-enedis.fr/data-connect/ 
 
 Après inscription, il faut créer une application. Plusieurs étapes sont nécessaire :
 - Renseigner le nom de l'application
