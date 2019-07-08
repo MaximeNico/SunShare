@@ -273,9 +273,9 @@ La troisème étape est l'obtention du Token
 Pour ce faire utiliser PostMan, dispo [ici](https://www.getpostman.com/).
 
 On renseigne les paramètres suivants :
-
-<img align="center" src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" style="margin-bottom: 10px; margin-top: 30px" height = 500>
-
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/R%C3%A9cup%C3%A9rationTokenPostman.png" alt="PostMan" height = 500>
+</p>
 Il est important de conserver les données suivantes :
 
 - access_token : c'est le token qui sera utilisé dans toutes les demandes d'informations à destination de l'API d'Enedis. Attention il est valide uniquement pendant 3h30
