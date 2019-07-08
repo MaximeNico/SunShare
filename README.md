@@ -545,8 +545,9 @@ maintenant que nous avons compris comment fonctionner la chaine de données à t
 
 Voir fichier dispo dans le dossier 'API ENEDIS'
 
-Pour terminer, l'application est mise en production côté Enedis.
+Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
 
-Si tout ce passe bien et que le service Enedis fonctionne (peu stable :trollface:)  les requêtes devrait renvoyer les informations attendues.
+
+Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.
 
 ## API application
