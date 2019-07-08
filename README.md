@@ -322,9 +322,14 @@ Pour valider la bonne implémentation on essaie de récupérer les données de c
 
 ```
 
+maintenant que nous avons compris comment fonctionner la chaine de données à travers le bac à sable, il faut réaliser les scripts nécessaire à la récupération des données.
+
+###Mise en oeuvre de l'API
+
+Voir fichier dispo dans le dossier 'API ENEDIS'
 
 Pour terminer, l'application est mise en production côté Enedis.
 
-Si tout ce passe bien et que le service Enedis fonctionne :trollface: les requêtes devrait renvoyer les informations attendues.
+Si tout ce passe bien et que le service Enedis fonctionne (peu stable :trollface:)  les requêtes devrait renvoyer les informations attendues.
 
 ## API application
