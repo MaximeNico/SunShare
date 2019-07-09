@@ -578,8 +578,8 @@ docker version
 Screen de retour
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Docker_version.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
-<em>Architecture V1 </em>
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Docker_version.png" alt="Docker_version" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<em>Docker_version</em>
 </p>
 
 Voila pour la partie docker :thumbsup:
