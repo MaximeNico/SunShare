@@ -136,8 +136,6 @@ Préparer les éléments (GCE Electronics USB TIC & GPIO compteur à impulsions)
 
 Cf chapitre précédent
 
-## Alerte sonore
-
 ## Création d'une alerte sonore et/ou visuelle
 
 Nous avons choisi de mettre en oeuvre l'alerte sonore. L'objectif est d'intégrer le buzzer dans un boitier fixé au mur. Le script Js produira en cas d'alarme une notification sonore de (deux secondes)x3.
