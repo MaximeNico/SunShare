@@ -57,7 +57,10 @@ Cette page comprend le classement de son équipe avec le podium de l'équipe et 
 
 ## Base de données des index et utilisateurs
 
-En attente d'éléments de Nico
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Schema%20BDD%20Sunshare.jpeg" alt="Maquette Team" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<em>Schéma base de données</em>
+</p>
 
 ## API ENEDIS
 
