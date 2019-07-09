@@ -548,16 +548,24 @@ EDIT : Cette partie n'est plus nécessaire avec la mise en place sur le serveur 
 Commencer par installer la dépendance ffi :
 
 ```
-libffi-dev
+sudo apt-get install libffi-dev
 ```
 
 Pour installer Docker et Docker-compose utiliser les ligne suivantes :
 ```
-sudo apt install docker-ce
+sudo apt install docker.io
 sudo usermod -aG docker pi
+docker run hello-world
 sudo apt-get install -y python python-pip
 sudo pip install docker-compose
 ```
+On vérifie que docker est bien à la dernière version dispo :
+
+```
+docker version
+```
+
+
 
 Nico la suite pour les deux composants
 
