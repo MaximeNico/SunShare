@@ -570,3 +570,9 @@ Screen de retour
 Voila pour la partie docker :thumbsup:
 
 ## Mise en place des conteneurs
+
+
+## Rendu des pages utilisateurs et groupes
+
+
+## Carroussel de bonnes idées économies d’énergie
