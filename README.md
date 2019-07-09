@@ -121,8 +121,8 @@ La société ENEDIS souhaite disposer d'une IP fixe pour envoyer ses données ve
 
 ### Choix final ?
 
-- [x] solution 1 (validé le 05/07/19)
-- [ ] solution 2
+- [ ] solution 1 (validé le 05/07/19 mais ressources non mise à disposition)
+- [x] solution 2 (choix technique efficient)
 
 ## Portail sécurisé
 
