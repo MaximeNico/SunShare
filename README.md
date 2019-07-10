@@ -581,20 +581,41 @@ Voila pour la partie docker :thumbsup:
 
 ## Mise en place des conteneurs
 
-<p align="center">
+<p align="justify">
 Pour rendre les développements effectués réplicables nous avons utilisé des containers docker. L'intérêt est de créer des environnements propres déjà configurés pour ne pas perdre de temps sur cette mise en oeuvre sur les prochains hackathons.
 Pour réaliser ces conteneurs il y'a plusieurs étapes :</p>
 
-### 1 - zdijj
+### 1 - Mise en oeuvre des containers
 
-<p align="center">
-
+<p align="justify">
+Pour rappel nous avons sur le premier rapsberry pi la base de données générale (1er conteneur) ainsi que le serious game (second conteneur). Pour rendre opérationnel l'architecture il nous faut donc créer ces deux conteneurs. La première étape est de créer le Dockerfile. C'est lui qui définira comment fonctionnera les conteneurs
 </p>
+```
+#pull a node image from docker hub
+FROM owncloudci/nodejs
 
-### 2 - skdjjizd
+#set the working dir to /app
+WORKDIR /app
 
-<p align="center">
+#expose port 3000 to mount it to another port in local machine
+EXPOSE 3000
 
+# install package.json modules in container
+COPY package.json package.json
+RUN npm install
+RUN npm update
+
+#copy everything to container /app
+COPY . .
+
+# start server inside container
+CMD [ "node", "app.js" ]
+```
+
+### 2 - Réalisation du docker-compose
+
+<p align="justify">
+Le docker-compose défini l'ensemble des paramètres internes des conteneurs, là où avant nous définisions l'environnement du conteneur, ici on définit les paramètres. Voici le détail :
 </p>
 
 ```yml
@@ -609,7 +630,7 @@ services:
     ports:
       - "27017:27017"
   sunshare:
-    build: .
+    image: nicohkptn/sunshare
     container_name: sunshare
     depends_on:
       - mongo
@@ -621,7 +642,21 @@ services:
       - .:/app
 ```
 
-### 3 - doiazjd
+De cette manière l'utilisateur final aura deux lignes à éxécuter pour rendre les containers opérationnels :
+
+```
+docker-compose build
+```
+puis :
+
+```
+docker-compose up -d
+```
+### 3 - Test de fonctionnement de l'API
+
+Nous allons donc maintenant tester voir si les requètes de l'API créée son fonctionnelle. Pour ce faire nous allons utiliser PostMan :
+
+
 
 <p align="center">
 
