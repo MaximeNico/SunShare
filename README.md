@@ -581,8 +581,57 @@ Voila pour la partie docker :thumbsup:
 
 ## Mise en place des conteneurs
 
+<p align="center">
+Pour rendre les développements effectués réplicables nous avons utilisé des containers docker. L'intérêt est de créer des environnements propres déjà configurés pour ne pas perdre de temps sur cette mise en oeuvre sur les prochains hackathons.
+Pour réaliser ces conteneurs il y'a plusieurs étapes :</p>
+
+### 1 - zdijj
+
+<p align="center">
+
+</p>
+
+### 2 - skdjjizd
+
+<p align="center">
+
+</p>
+
+```yml
+version: '2'
+
+services:
+  mongo:
+    image: mongo:latest
+    container_name: mongo
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - "27017:27017"
+  sunshare:
+    build: .
+    container_name: sunshare
+    depends_on:
+      - mongo
+    environment:
+      - ENV=DEV
+    ports:
+      - "127.0.0.1:7777:3000"
+    volumes:
+      - .:/app
+```
+
+### 3 - doiazjd
+
+<p align="center">
+
+</p>
+
 
 ## Rendu des pages utilisateurs et groupes
 
+Soon...
 
 ## Carroussel de bonnes idées économies d’énergie
+
+Soon...
