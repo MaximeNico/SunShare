@@ -4,6 +4,7 @@ import dashBoard from '@/views/DashBoard'
 import team from '@/views/team'
 import profil from '@/views/profil'
 import bestPractices from '@/views/BestPractices'
+import logConsent from '@/views/LogConsent'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/best-practices',
       name: 'bestPractices',
       component: bestPractices
+    },
+    {
+      path: '/log-consent',
+      name: 'logConsent',
+      component: logConsent
     }
   ]
 })
