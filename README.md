@@ -55,6 +55,12 @@ Voici la maquette de la page :
 </p>
 Cette page comprend le classement de son équipe avec le podium de l'équipe et un classement global avec l'affichage des 3 meilleures équipes.
 
+
+<p align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Web%201920%20%E2%80%93%20Interface%20administarteur%20(Dashboard).png" alt="Maquette Admin" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+
+Cette page comprend les KPI du serious game. L'administrateur a également la possibilité de gérer les utilisateurs et les groupes.
+
 ## Base de données des index et utilisateurs
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
@@ -134,9 +140,9 @@ Soon...
 
 ## Connexion en JavaScript avec les capteurs (TIC et compteur à impulsions)
 
-Pour réaliser l'interface entre le compteur linky et le raspberrypi on continuera d'utiliser le module délvelopper par l'entreprise GCE Electronics. Pour ce faire nous utiliserons les modules développés par 'lhuet' : https://github.com/lhuet/teleinfo/tree/master/nodejs. Ce git nous permettra d'effectuer l'ouverture du port série du raspberry pi (lié au port usb) et de récupérer les informations de teleinfo. Cette solution sera simple à mettre en oeuvre seulement quelques adaptations de contexte seront nécessaire pour mettre en place cette interraction.
+<p align="justify">Pour réaliser l'interface entre le compteur linky et le raspberrypi on continuera d'utiliser le module délvelopper par l'entreprise GCE Electronics. Pour ce faire nous utiliserons les modules développés par 'lhuet' : https://github.com/lhuet/teleinfo/tree/master/nodejs. Ce git nous permettra d'effectuer l'ouverture du port série du raspberry pi (lié au port usb) et de récupérer les informations de teleinfo. Cette solution sera simple à mettre en oeuvre seulement quelques adaptations de contexte seront nécessaire pour mettre en place cette interraction.
 
-Pour ce qui est du compteur à impulsions, nous utiliserons le paquet npm rpi-gpio. (pas eu le temps de faire le développement sur cette partie)
+Pour ce qui est du compteur à impulsions, nous utiliserons le paquet npm rpi-gpio. (pas eu le temps de faire le développement sur cette partie)</p>
 
 ## API ENEDIS
 
