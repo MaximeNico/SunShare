@@ -661,14 +661,14 @@ docker-compose up -d
 ```
 ### 3 - Test de fonctionnement de l'API
 
-Nous allons donc maintenant tester voir si les requètes de l'API créée son fonctionnelle. Pour ce faire nous allons utiliser PostMan :
+Nous allons donc maintenant tester voir si les requètes de l'API créées son fonctionnelles. Pour ce faire nous allons utiliser PostMan :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/api%20enedis%20postman.png" alt="Docker_version" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>API Enedis Postman</em>
 </p>
 
-<p align="center">
+<p align="justify">
 Sur ce test de notre API on peux voir le traitement associé lorsque le DBPI reçoit les données Enedis. Le traitement des données montre que chaque "rank" est traité pour correspondre à une heure ou demi-heure de la journée. Les données de consommation liées à ce rank sont stockées sur la base avec l'identifiant unique de l'utilisateur. L'API étant fonctionnelle nous pouvons maintenant passer au test fonctionnel de la pile globale.
 </p>
 
