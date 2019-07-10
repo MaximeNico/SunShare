@@ -590,6 +590,7 @@ Pour réaliser ces conteneurs il y'a plusieurs étapes :</p>
 <p align="justify">
 Pour rappel nous avons sur le premier rapsberry pi la base de données générale (1er conteneur) ainsi que le serious game (second conteneur). Pour rendre opérationnel l'architecture il nous faut donc créer ces deux conteneurs. La première étape est de créer le Dockerfile. C'est lui qui définira comment fonctionnera les conteneurs
 </p>
+
 ```
 #pull a node image from docker hub
 FROM owncloudci/nodejs
@@ -642,12 +643,7 @@ services:
       - .:/app
 ```
 
-De cette manière l'utilisateur final aura deux lignes à éxécuter pour rendre les containers opérationnels :
-
-```
-docker-compose build
-```
-puis :
+De cette manière l'utilisateur final aura une ligne à éxécuter pour rendre les containers opérationnels :
 
 ```
 docker-compose up -d
