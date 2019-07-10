@@ -664,7 +664,7 @@ docker-compose up -d
 Nous allons donc maintenant tester voir si les requètes de l'API créée son fonctionnelle. Pour ce faire nous allons utiliser PostMan :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Docker_version.png" alt="Docker_version" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/api%20enedis%20postman.png" alt="Docker_version" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Docker_version</em>
 </p>
 
