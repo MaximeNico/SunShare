@@ -59,14 +59,14 @@ Cette page comprend le classement de son équipe avec le podium de l'équipe et 
 ### Page administrateur
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Web%201920%20%E2%80%93%20Interface%20administarteur%20(Dashboard).png" alt="Maquette Admin" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/Web%201920%20%E2%80%93%20Interface%20administarteur%20(Dashboard).png" alt="Maquette Admin" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 
 Cette page comprend les KPI du serious game. L'administrateur a également la possibilité de gérer les utilisateurs et les groupes.
 
 ## Base de données des index et utilisateurs
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Schema%20BDD%20Sunshare.jpeg" alt="Schéma base de données" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/Schema%20BDD%20Sunshare.jpeg" alt="Schéma base de données" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
 </p>
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Schéma base de données</em>
@@ -196,7 +196,7 @@ Voici un schéma de l'architecture envisagée en sa version initiale :
 Voici un schéma de l'architecture envisagée(V1) :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/ArchitectureV1.png" alt="ArchitectureV1" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V1 </em>
 </p>
 
@@ -208,7 +208,7 @@ Nous ne pouvons pas mettre en place cette architecture car les ressources pour e
 Voici un schéma de l'architecture retenue pour le projet(V2) :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/ArchitectureV2.png" alt="ArchitectureV2" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master//Ressources%20graphique/ArchitectureV2.png" alt="ArchitectureV2" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V2 </em>
 </p>
 
@@ -219,7 +219,7 @@ Cette architecture est l'architecture finale pour le projet. Nous concervons l'u
 </p>
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Architecture%20finale.png" alt="ArchitectureVF" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/Architecture%20finale.png" alt="ArchitectureVF" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture finale </em>
 </p>
 
