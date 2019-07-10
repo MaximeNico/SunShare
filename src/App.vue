@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid app">
-      <div class="row app">
+      <div class="row app" v-if="appState">
         <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
@@ -16,6 +16,11 @@
           </div>
         </div>
       </div>
+      <div class="row app" v-else>
+        <transition>
+          <router-view />
+        </transition>
+      </div>
     </div>
   </div>
 </template>
@@ -29,6 +34,15 @@ export default {
   components: {
     menuSide,
     appHeader
+  },
+  computed: {
+    appState: function () {
+      return this.$store.getters.appOnUse
+    }
+  },
+  mounted: function () {
+    (!this.appState) ? this.$router.push({ name: 'logConsent' }) : null
+    console.log('computed mapState: ', this.appState)
   }
 }
 </script>
