@@ -159,7 +159,7 @@ Le script JS est accessible dans le dossier 'Buzzer'.
 
 ## Création utilisateurs
 
-Fonctionnalité implémenter dans la base de données mais la page n'a pas été réalisé.
+Fonctionnalité implémenter dans la base de données mais la page n'a pas été réalisée.
 
 ## Commande de déclenchement électrique (réalisation d'effacement de puissance)
 
