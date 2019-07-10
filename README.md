@@ -163,7 +163,7 @@ Fonctionnalité implémenter dans la base de données mais la page n'a pas été
 
 ## Commande de déclenchement électrique (réalisation d'effacement de puissance)
 
-Utilisation d’un JavaScript similaire à celui de l’alarme sonore. Il faut brancher un relais de puissance sur l'une des sorties GPIO du raspberrypi. Attention à bien avertir l'utilisateur de la puissance de commutation du relais et les chocs électriques inhérents. Pour la réalisation, nous n'avons pas eu le temps de faire le script mais c'est une réplique augmentée du Buzzer. 
+Utilisation d’un JavaScript similaire à celui de l’alarme sonore. Il faut brancher un relais de puissance sur l'une des sorties GPIO du raspberrypi. Attention à bien avertir l'utilisateur de la puissance de commutation du relais et les chocs électriques inhérents. Pour la réalisation, nous n'avons pas eu le temps de faire le script mais c'est une réplique augmentée du Buzzer.
 
 
 ## Design Boitier
@@ -188,7 +188,7 @@ Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+.
 Voici un schéma de l'architecture envisagée en sa version initiale :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
-<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/ArchitectureV0.png" alt="ArchitectureV0" align="center" style="margin-bottom: 10px; margin-top: 30px">
+<img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/ArchitectureV0.png" alt="ArchitectureV0" align="center" style="margin-bottom: 10px; margin-top: 30px">
 <em>Architecture V0 </em>
 </p>
 
