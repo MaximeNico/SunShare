@@ -36,9 +36,10 @@ Les objectifs concrets de ce projet sont :
 ## Interface utilisateur + interface administrateur
 
 ### Création des visuels
-Pour cette partie il nous a été demandé de créer deux interfaces graphiques distinctes :
+Pour cette partie il nous a été demandé de créer trois interfaces graphiques distinctes :
 - Une dédiée à l'utilisateur
 - Une dédiée à l'équipe
+- Une dédiée à l'administrateur
 
 ### Page  utilisateur
 
@@ -55,6 +56,7 @@ Voici la maquette de la page :
 </p>
 Cette page comprend le classement de son équipe avec le podium de l'équipe et un classement global avec l'affichage des 3 meilleures équipes.
 
+### Page administrateur
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/Kevin/Ressources%20graphique/Web%201920%20%E2%80%93%20Interface%20administarteur%20(Dashboard).png" alt="Maquette Admin" align="center" style="margin-bottom: 10px; margin-top: 30px" height = 500>
@@ -136,7 +138,7 @@ Dans cette partie, les économies d’énergie sont réparties par domaines (cha
 
 ## Dashboard, interface locale de l’utilisateur
 
-Soon...
+Réutilisation de la page utilisateur du Serious Game avec ajout de différentes fonctionnalitées (widget de visuels)
 
 ## Connexion en JavaScript avec les capteurs (TIC et compteur à impulsions)
 
@@ -154,6 +156,15 @@ Nous avons choisi de mettre en oeuvre l'alerte sonore. L'objectif est d'intégre
 Le script JS est accessible dans le dossier 'Buzzer'.
 
 # Fonctionnalités augmentées (options): mise en relation de la boxénergie et de la base de données
+
+## Création utilisateurs
+
+Fonctionnalité implémenter dans la base de données mais la page n'a pas été réalisé.
+
+## Commande de déclenchement électrique (réalisation d'effacement de puissance)
+
+Utilisation d’un JavaScript similaire à celui de l’alarme sonore. Il faut brancher un relais de puissance sur l'une des sorties GPIO du raspberrypi. Attention à bien avertir l'utilisateur de la puissance de commutation du relais et les chocs électriques inhérents. Pour la réalisation, nous n'avons pas eu le temps de faire le script mais c'est une réplique augmentée du Buzzer. 
+
 
 ## Design Boitier
 
