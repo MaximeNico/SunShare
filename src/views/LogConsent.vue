@@ -26,15 +26,13 @@ export default {
       inputControl: null
     }
   },
-  computed: mapState([
-    'app'
-  ]),
   methods: {
     sendInputClient: function () {
       // let url = 'https://gw.hml.api.enedis.fr/group/espace-particuliers/consentement-linky/oauth2/authorize?client_id=' + this.inputControl + '&state=abcdef&duration=P12M&response_type=code&redirect_uri=https://linky.sunshare.fr'
       // axiosHelper.getInfos(url)
       // window.location.replace(url)
       this.$store.commit('onUse') // replace momentaly the acces token
+      this.$store.dispatch('setClientId', this.inputControl)
       this.$router.push({ name: 'dashBoard' })
     }
   }

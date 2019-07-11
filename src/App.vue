@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid app">
-      <div class="row app" v-if="hasToken">
+      <div class="row app" v-if="onUse">
         <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
@@ -29,6 +29,7 @@
 import menuSide from '@/components/menuSide'
 import appHeader from '@/components/appHeader'
 import { mapState } from 'vuex'
+import { mapGetters } from 'vuex'
 import axiosHelper from '@/store/helper/axiosHelper'
 
 export default {
@@ -46,22 +47,25 @@ export default {
   computed: mapState([
     'app'
   ]),
-  created: function () {
-    // https://linky.sunshare.fr?code=d2NdD7128QF72BXuAdJCdoM9qHfHPo&state=abcdef&usage_point_id=22516914714270
+  computed: {
+    onUse: function () {
+      return this.$store.state.appState.appOnUse
+    }
   },
   mounted: function () {
-    console.log('Created app component :', window.location)
-    let urlP = window.location.href
-    console.log('url parse search :', urlP.search())
-    let code = 'Ap7J7rUeupjSUmcKXnrB5rXorIsvaB'
-    let clientId = 'a782e2d9-f1da-4c11-8659-2084fd407f99'
-    let url = ' https://gw.hml.api.enedis.fr/v1/oauth2/token?redirect_uri=https://linky.sunshare.fr&grant_type=authorization_code&client_id=' + clientId + '&client_secret=b736094a-0776-4d07-ac16-9861a0540a25&code=' + code
-    // axiosHelper.postInfos(url)
-    console.log(axiosHelper.postInfos(url))
+    (!this.onUse) ? this.$router.push({ name: 'logConsent' }) : null
+    // console.log('Created app component :', window.location)
+    // let urlP = window.location.href
+    // console.log('url parse search :', urlP.search())
+    // let code = 'Ap7J7rUeupjSUmcKXnrB5rXorIsvaB'
+    // let clientId = 'a782e2d9-f1da-4c11-8659-2084fd407f99'
+    // let url = ' https://gw.hml.api.enedis.fr/v1/oauth2/token?redirect_uri=https://linky.sunshare.fr&grant_type=authorization_code&client_id=' + clientId + '&client_secret=b736094a-0776-4d07-ac16-9861a0540a25&code=' + code
+    // // axiosHelper.postInfos(url)
+    // console.log(axiosHelper.postInfos(url))
   },
   updated: function () {
     console.log('APP updated !')
-    (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
+    // (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
   }
 }
 </script>
