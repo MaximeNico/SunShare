@@ -686,3 +686,45 @@ Soon...
 ## Carroussel de bonnes idées économies d’énergie
 
 Soon...
+
+# Évolutions et continuité de développement
+
+Comme évoqué tout au long de ce document, le projet se veut réplicable. L'ensemble de l'environnement est "dockerisé". Pour commencer les évolutions il faut compiler les conteneurs.
+
+## Serious Game
+
+### Création utilisateurs
+
+Les utilisateurs ont bien une page dédiée, développée et fonctionnelle. Ils doivent en revanche s'inscrire pour particper au Serious Game. Cette page d'inscription n'est aujourd'hui pas implémentée. Il sera nécessaire de faire le développemnet de la page. Attention, il faut bien faire attention au parcours utilisateur avec l'API Enedis (cf API Enedis).
+
+### Groupes
+
+La page groupe existe, la base de données sait quel utilisateur fait partie de tel groupe mais les liens logiques sur la page n'ont pas été mis en place.
+
+### Administrateur
+
+La page administrateur a été maquettée mais non développée. Il faudra également rajouter à la base de données le profil administrateur qui n'est pas prévu aujourd'hui.
+
+### Mise en place des scénarios / challenges
+
+Les scénarios existent mais ne sont pas fonctionnels. Il faudra effectuer toute la partie de calcul des points et attribution aux utilisateurs.
+
+## API ENEDIS
+
+### Mise en production
+
+La mise en production nécessite un parcours utilisateur particulier. Les pages ont été développées mais pas implémentées. Il faut construire l'application avec Enedis et mettre en place un serveur avec une IP fixe pour répondre aux exigences.
+
+## Boxénergie
+
+### Connexion JavaScript des compteurs
+
+Les connexions aux compteurs ont été réfléchies, des scripts trouvés mais non mis en place. cf : [ici](https://github.com/MaximeNico/SunShare#connexion-en-javascript-avec-les-capteurs-tic-et-compteur-%C3%A0-impulsions)
+
+### Buzzer
+
+La logique du buzzer est fonctionnelle. Il faut déterminer au préalable les différents scénarios d'alarmes pour faire appel au script. l'extension avec l'alarme visuelle est simple à lier. Il faut par contre utiliser l'écran de contrôle autrement elle n'a pas réel intérêt.
+
+### Relais de puissance
+
+Le relais de puissance est un script simple à réaliser. Il faut faire attention et bien alerter l'utilisateur sur les risques électriques de la mise en oeuvre d'un relais de puissance. Typiquement lors de l'installation mette l'infrastructure électrique hors tension. Le 230V c'est mortel !
