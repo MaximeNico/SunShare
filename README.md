@@ -98,11 +98,11 @@ Afin d'éviter la mise en place de technique douteuse pour flouer le système no
 
 ## Création d'un mode simplifié
 
-<p align="justify">On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit à minima posséder une insallation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenge que nous verrons dans la partie suivante.</p>
+<p align="justify">On distingue deux types d'utilisateurs pour le Serious Game. Une première catégorie utilise à la fois la Boxénergie et le Serious Game. Pour répondre à l'utilisation de la Boxénergie l'utilisateur doit a minima posséder une installation de panneau solaire et disposer d'un contrat de revente pour son électricité. Si l'utilisateur ne répond pas à cela il a alors la possibilité de créer un compte uniquement pour le Serious Game. Il pourra ainsi participer au jeu et rapporter des points à son équipe sans passer par la Boxénergie. L'ensemble des points seront collectés à travers les divers challenges que nous verrons dans la partie suivante.</p>
 
 ## Établir les règles du jeu
 
-<p align="justify">Dans une logique vertueuse pour l'environnement un principe de challenges et d'objectifs seront mis en place. On distinguera deux catégories. Ceux possédant la Boxénergie auront accès à l'ensemble des challenges et objectifs. Pour les utilisateurs en mode simplifié seul certains challenges et objectifs seront possibles.</p>
+<p align="justify">Dans une logique vertueuse pour l'environnement un principe de challenges et d'objectifs sera mis en place. On distinguera deux catégories. Ceux possédant la Boxénergie auront accès à l'ensemble des challenges et objectifs. Pour les utilisateurs en mode simplifié seuls certains challenges et objectifs seront possibles.</p>
 
 ## Règles soumisses
 
@@ -131,7 +131,7 @@ Dans cette partie, les économies d’énergie sont réparties par domaines (cha
 
 ### Effacement de puissance
 
-<p align="justify">Une des fonctionnalités supplémentaire est de pouvoir faire commuter des relais de puissance. Grâce à cette fonctionnalité et en ayant renseigner la puissance active des appareils connectés sur ce relais nous serions capable de calculer la puissance effacée sur le réseau. En fonction de la puissance totale effacée, de la période et du temps d'effacement l'utilisateur reporterai plus ou moins de points. Nous savons que les pics de puissance se produissent le soir aux alentours de 19h. Si l'utilisateur efface une grande partie de sa puissance à ce moment précis alors il remportera un maximum de point. On y appliquera un coefficient multiplicateur. Après une heure d'effacement passe en x2, si effacement à des heures "pic" x3, etc</p>
+<p align="justify">Une des fonctionnalités supplémentaire est de pouvoir faire commuter des relais de puissance. Grâce à cette fonctionnalité et en ayant renseigné la puissance active des appareils connectés sur ce relais nous serions capables de calculer la puissance effacée sur le réseau. En fonction de la puissance totale effacée, de la période et du temps d'effacement l'utilisateur reporterai plus ou moins de points. Nous savons que les pics de puissance se produisent le soir aux alentours de 19h. Si l'utilisateur efface une grande partie de sa puissance à ce moment précis alors il remportera un maximum de points. On y appliquera un coefficient multiplicateur. Après une heure d'effacement passe en x2, si effacement à des heures "pic" x3, etc.</p>
 
 # Boxenergie : assistant économies d’énergie à domicile
 
@@ -142,9 +142,9 @@ Réutilisation de la page utilisateur du Serious Game avec ajout de différentes
 
 ## Connexion en JavaScript avec les capteurs (TIC et compteur à impulsions)
 
-<p align="justify">Pour réaliser l'interface entre le compteur linky et le raspberrypi on continuera d'utiliser le module délvelopper par l'entreprise GCE Electronics. Pour ce faire nous utiliserons les modules développés par 'lhuet' : https://github.com/lhuet/teleinfo/tree/master/nodejs. Ce git nous permettra d'effectuer l'ouverture du port série du raspberry pi (lié au port usb) et de récupérer les informations de teleinfo. Cette solution sera simple à mettre en oeuvre seulement quelques adaptations de contexte seront nécessaire pour mettre en place cette interraction.
+<p align="justify">Pour réaliser l'interface entre le compteur linky et le raspberrypi on continuera d'utiliser le module délvelopper par l'entreprise GCE Electronics. Pour ce faire nous utiliserons les modules développés par 'lhuet' : https://github.com/lhuet/teleinfo/tree/master/nodejs. Ce git nous permettra d'effectuer l'ouverture du port série du raspberry pi (lié au port USB) et de récupérer les informations de teleinfo. Cette solution sera simple à mettre en oeuvre seulement quelques adaptations de contexte seront nécessaires pour mettre en place cette interraction.
 
-Pour ce qui est du compteur à impulsions, nous utiliserons le paquet npm rpi-gpio. (pas eu le temps de faire le développement sur cette partie)</p>
+Pour ce qui est du compteur à impulsions, nous utiliserons le paquet npm rpi-gpio. (pas eut le temps de faire le développement sur cette partie)</p>
 
 ## API ENEDIS
 
@@ -159,7 +159,7 @@ Le script JS est accessible dans le dossier 'Buzzer'.
 
 ## Création utilisateurs
 
-Fonctionnalité implémenter dans la base de données mais la page n'a pas été réalisée.
+Fonctionnalité implémentée dans la base de données mais la page n'a pas été réalisée.
 
 ## Commande de déclenchement électrique (réalisation d'effacement de puissance)
 
@@ -168,7 +168,7 @@ Utilisation d’un JavaScript similaire à celui de l’alarme sonore. Il faut b
 
 ## Design Boitier
 
-<p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y'a deux solutions possible. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un modèle existant : https://www.thingiverse.com/make:529106 qui répondra à la demande. Pour y greffer le buzzer il reste suffisament de place dans le boitier pour en intégrer un. POur répondre à la demande de l'éco-conception on imprimera la pièce en PLA :http://www.green-desk.net/le-pla-cest-quoi/. Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
+<p align="justify">Pour répondre à la demande du boitier du raspberry pi, il y a deux solutions possibles. La première étant la conception d'un boitier imprimable en série par une entreprise. La seconde est la réalisation d'un boitier par une imprimante 3D. Pour répondre à la seconde solution nous pouvons partir d'un modèle existant : https://www.thingiverse.com/make:529106 qui répondra à la demande. Pour y greffer le buzzer il reste suffisamment de place dans le boitier pour en intégrer un. Pour répondre à la demande de l'écoconception on imprimera la pièce en PLA :http://www.green-desk.net/le-pla-cest-quoi/. Ce boitier permettra à l'utilisateur, grâce à l'écran, de visualiser directement les dashboards. Cette option reste la plus "propre" et écologique.</p>
 
 # Réalisation
 
@@ -177,7 +177,7 @@ Utilisation d’un JavaScript similaire à celui de l’alarme sonore. Il faut b
 <a href="https://www.raspberrypi.org"><img src="https://www.raspberrypi.org/wp-content/uploads/2012/03/raspberry-pi-logo.png" alt="Raspberry Pi Logo" align="right" style="margin-left: 25px; margin-bottom: 10px" height=100></a>
 
 <p align="justify">
-Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+. La demande initiale était d'utiliser ces deux RaspberryPi en tant qu' "utilisateurs". Au vu de la demande de produire un code "écoconception",nous avons choisi de les exploiter de manière différentes. La demande initiale concernait la mise en place d'un serveur MongoAtlas. Au vu de l'implantation des serveurs (US) et de la route de l'ensemble des paquets, il ne nous parrait pas judicieux d'utiliser cette architecture. Nous avons donc utilisé le premier comme base de données No-SQL (MogoDB). Le second est utilisé comme serveur web avec Docker. L'enjeu sur le second est de mettre en place deux containers. Le premier conteneur servira à faire tourner la Boxénergie et le second le Serious Game. L'avantage est de créer un environnement facilement réplicable et simple à mettre en oeuvre. De plus docker étant opensource et adaptable à n'importe quel environnement de développement les différents hackathons suivants ne seront pas pénalisés par le choix d'une technologie fermée.
+Dans le but de réaliser ce projet l'école nous a fourni deux RaspberryPi V3B+. La demande initiale était d'utiliser ces deux RaspberryPi en tant qu' "utilisateurs". Au vu de la demande de produire un code "écoconception",nous avons choisi de les exploiter de manière différentes. La demande initiale concernait la mise en place d'un serveur MongoAtlas. Au vu de l'implantation des serveurs (US) et de la route de l'ensemble des paquets, il ne nous parraît pas judicieux d'utiliser cette architecture. Nous avons donc utilisé le premier comme base de données No-SQL (MogoDB). Le second est utilisé comme serveur web avec Docker. L'enjeu sur le second est de mettre en place deux containers. Le premier conteneur servira à faire tourner la Boxénergie et le second le Serious Game. L'avantage est de créer un environnement facilement réplicable et simple à mettre en oeuvre. De plus docker étant opensource et adaptable à n'importe quel environnement de développement les différents hackathons suivants ne seront pas pénalisés par le choix d'une technologie fermée.
 </p>
 
 [MongoDB](https://www.mongodb.com/),
@@ -203,7 +203,7 @@ Voici un schéma de l'architecture envisagée(V1) :
 ### Architecture V2
 
 <p align="justify">
-Nous ne pouvons pas mettre en place cette architecture car les ressources pour effectuer la mise en oeuvre ne sont pas disponible nous partons donc vers une architecture en local pour le POC (cf: architecture finale)
+Nous ne pouvons pas mettre en place cette architecture car les ressources pour effectuer la mise en oeuvre ne sont pas disponibles. Nous partons donc vers une architecture en local pour le POC (cf: architecture finale)
 </p>
 Voici un schéma de l'architecture retenue pour le projet(V2) :
 
@@ -215,7 +215,7 @@ Voici un schéma de l'architecture retenue pour le projet(V2) :
 ### Architecture finale
 
 <p align="justify">
-Cette architecture est l'architecture finale pour le projet. Nous concervons l'utilisation de docker pour conserver l'indépendance des services. Un service sera dédié au serious game et l'autre à la partie Boxénergie. Cette architecture se veux autonome. Si le service Serious Game ne fonctionne pas pour cause de défaut de connexion internet, le service Boxénergie continuera lui de fonctionner. La réciproque est vraie. Il y aura également une base locale pour la Boxénergie (partie TIC et compteur à impulsions). Cette base sera liée au mode dégradé (off-line) si l'utilisateur ne veux pas participer au serious game.
+Cette architecture est l'architecture finale pour le projet. Nous concervons l'utilisation de docker pour conserver l'indépendance des services. Un service sera dédié au serious game et l'autre à la partie Boxénergie. Cette architecture se veut autonome. Si le service Serious Game ne fonctionne pas pour cause de défaut de connexion internet, le service Boxénergie continuera lui de fonctionner. La réciproque est vraie. Il y aura également une base locale pour la Boxénergie (partie TIC et compteur à impulsions). Cette base sera liée au mode dégradé (off-line) si l'utilisateur ne veut pas participer au serious game.
 </p>
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
@@ -273,7 +273,7 @@ On renseigne les paramètres suivants :
 - access_token : c'est le token qui sera utilisé dans toutes les demandes d'informations à destination de l'API d'Enedis. Attention il est valide uniquement pendant 3h30
 - refresh_token : c'est le token qui sera utilisé pour faire une nouvelle demande d'access_token quand celui-ci sera expiré. Le refresh_token est valable un an.
 
-Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessaire pour mettre en place la demande de données</p>
+Nous avons donc maintenant en notre possesion l'ensemble des entrées nécessaires pour mettre en place la demande de données de consommation et/ou production (fonctionnalité à venir : été 2019)</p>
 
 #### Test récupération de données
 
@@ -535,22 +535,28 @@ Puis toutes les 30min :
 
 ### Mise en oeuvre de l'API
 
-Voir fichier dispo dans le dossier 'API ENEDIS' (fichier issu du site ENEDIS)
+Voir fichier dispo dans le dossier 'API ENEDIS' (fichier issus du site ENEDIS)
 
 <p align="justify">Il faut bien comprendre que l'ensemble de cette chaine nécessite des interractions avec l'utilisateur. Le receuil du consentement sera liée à une page spécifique sur le serveur (linky.sunshare.fr). Il devra collecter les données sur cette page pour les renseigner ensuite sur l'interface utilisateur. Un encart spécifique est mis à disposition à la création du compte. L'objectif est de faciliter le parcours utilisateur. L'aspect token est géré via l'application et la collecte de données également.
-Si tout ce passe bien et que le service Enedis fonctionne (peu stable, constaté sur plusieurs sites) les requêtes devrait renvoyer les informations attendues.</p>
+Si tout ce passe bien et que le service Enedis fonctionne, les requêtes devraient renvoyer les informations attendues.</p>
 
 ## Installation et configuration des Raspberrypi
 
 <p align="justify">Pour commencer il faut installer Raspbian (distrubution Linux pour le raspberry). Pour ce faire, rendez-vous sur : https://www.raspberrypi.org/downloads/raspbian/ et télécharger la version lite.
 Une fois le .zip téléchargé ne pas de le dézipper.
-Télécharger Ethcer(https://www.balena.io/etcher/) pour monter l'iso sur la carte SD.
+Télécharger Ethcer(https://www.balena.io/etcher/) pour monter l'image sur la carte SD.
 Créer un fichier 'ssh' sans extension sur la racine boot pour initialiser la connexion SSH.
 Une fois termniné mettre la carte dans le slot SD prévu sur le raspberrypi.
 
 Se connecter en SSH sur le raspberrypi (Mac OS et Linux pas de logiciel additionnel nécessaire).
 
 Si vous êtes sous windows télécharger la dernière version de [putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
+
+Si vous ne connaissez pas son adresse IP mais qu'il est connecté sur le même sous réseau utiliser la commande suivante :
+
+```
+ssh pi@raspeberrypi.local
+```
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
 
@@ -594,12 +600,12 @@ Voila pour la partie docker :thumbsup:
 
 <p align="justify">
 Pour rendre les développements effectués réplicables nous avons utilisé des containers docker. L'intérêt est de créer des environnements propres déjà configurés pour ne pas perdre de temps sur cette mise en oeuvre sur les prochains hackathons.
-Pour réaliser ces conteneurs il y'a plusieurs étapes :</p>
+Pour réaliser ces conteneurs il y a plusieurs étapes :</p>
 
 ### 1 - Mise en oeuvre des containers
 
 <p align="justify">
-Pour rappel nous avons sur le premier rapsberry pi la base de données générale (1er conteneur) ainsi que le serious game (second conteneur). Pour rendre opérationnel l'architecture il nous faut donc créer ces deux conteneurs. La première étape est de créer le Dockerfile. C'est lui qui définira comment fonctionnera les conteneurs
+Pour rappel, nous avons sur le premier rapsberry pi la base de données générale (1er conteneur) ainsi que le serious game (second conteneur). Pour rendre opérationnel l'architecture il nous faut donc créer ces deux conteneurs. La première étape est de créer le Dockerfile. C'est lui qui définira comment fonctionnera les conteneurs
 </p>
 
 ```
@@ -627,7 +633,7 @@ CMD [ "node", "app.js" ]
 ### 2 - Réalisation du docker-compose
 
 <p align="justify">
-Le docker-compose défini l'ensemble des paramètres internes des conteneurs, là où avant nous définisions l'environnement du conteneur, ici on définit les paramètres. Voici le détail :
+Le docker-compose défini l'ensemble des paramètres internes des conteneurs, là où avant nous définissions l'environnement du conteneur, ici on définit les paramètres. Voici le détail :
 </p>
 
 ```yml
@@ -654,14 +660,14 @@ services:
       - .:/app
 ```
 
-De cette manière l'utilisateur final aura une ligne à éxécuter pour rendre les containers opérationnels :
+De cette manière l'utilisateur final aura une ligne à exécuter pour rendre les containers opérationnels :
 
 ```
 docker-compose up -d
 ```
 ### 3 - Test de fonctionnement de l'API
 
-Nous allons donc maintenant tester voir si les requètes de l'API créées son fonctionnelles. Pour ce faire nous allons utiliser PostMan :
+Nous allons donc maintenant tester voir si les requètes de l'API créées sont fonctionnelles. Pour ce faire nous allons utiliser PostMan :
 
 <p align="center" style="margin-bottom: 10px; margin-top: 30px">
 <img src="https://raw.githubusercontent.com/MaximeNico/SunShare/master/Ressources%20graphique/api%20enedis%20postman.png" alt="Docker_version" align="center" style="margin-bottom: 10px; margin-top: 30px">
@@ -669,7 +675,7 @@ Nous allons donc maintenant tester voir si les requètes de l'API créées son f
 </p>
 
 <p align="justify">
-Sur ce test de notre API on peux voir le traitement associé lorsque le DBPI reçoit les données Enedis. Le traitement des données montre que chaque "rank" est traité pour correspondre à une heure ou demi-heure de la journée. Les données de consommation liées à ce rank sont stockées sur la base avec l'identifiant unique de l'utilisateur. L'API étant fonctionnelle nous pouvons maintenant passer au test fonctionnel de la pile globale.
+Sur ce test de notre API on peut voir le traitement associé lorsque le DBPI reçoit les données Enedis. Le traitement des données montre que chaque "rank" est traité pour correspondre à une heure ou demi-heure de la journée. Les données de consommation liées à ce rank sont stockées sur la base avec l'identifiant unique de l'utilisateur. L'API étant fonctionnelle nous pouvons maintenant passer au test fonctionnel de la pile globale.
 </p>
 
 
