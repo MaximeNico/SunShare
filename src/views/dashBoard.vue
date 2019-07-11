@@ -2,8 +2,8 @@
   <div class="container-fluid dashBoard">
     <div class="row advice-contain">
       <div class="col col-12">
-        <transition name="fade">
-          <adviceBlock v-if="showAdvice" :title="'Conseil du jour !'" @adviceBlockDestroy="checkAdviceBlockStatus" />
+        <transition name="fade" mode="in-out">
+          <adviceBlock v-if="showAdvice" @adviceBlockDestroy="checkAdviceBlockStatus" />
         </transition>
       </div>
     </div>
