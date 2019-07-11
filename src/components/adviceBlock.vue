@@ -4,16 +4,16 @@
         <div class="head-block">
           <div class="title">
             <lightIcon />
-            {{ title }}
+            Petit conseil du jour: {{ randomAdvice.title }}
           </div>
           <crossIcon @crossIconClicked="checkState" />
         </div>
         <div class="row main-contain">
           <div class="col col-2 picture-advice">
-            <img src="../assets/recycling.png" alt="Recycling">
+            <img src="../assets/recycling.png" height="85" alt="Recycling" class="img">
           </div>
           <div class="col col-10 text-content-advice">
-            {{ adviceText }}
+            {{ randomAdvice.text }}
           </div>
         </div>
         <div class="row footer-button-contain">
@@ -35,21 +35,29 @@ export default {
     crossIcon,
     buttonGlobal
   },
-  props: {
-    title: {
-      type: String,
-      default: 'Nos conseils'
-    }
-  },
   data: function () {
     return {
-      adviceText: 'Cat ipsum dolor sit amet, and sometimes switches in french and say "miaou" just because well why not for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked dont wait for the storm to pass, dance in the rain. Sit in window and stare oooh, a bird, yum cough. Have my breakfast spaghetti yarn cat dog hate mouse eat string barf pillow no baths hate everything so pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now for touch water with paw then recoil in horror sit on the laptop.'
+      advicesTable:[
+        { title: 'UN MOUSSEUR (OU AÉRATEUR)', text: 'Une fois placé sur votre robinet, ce petit dispositif injecte de minuscules bulles d’air dans l’eau qui coule. Le débit du robinet est ainsi réduit de 30 à 50%!'},
+        { title: 'UNE DOUCHETTE ÉCONOME', text: 'Avec le même confort d’utilisation qu’une douchette classique, elle limite le débit de sortie de l’eau tout en optimisant la pression du jet. Vous réalisez ainsi jusqu’à 75% d’économies d’eau.'},
+        { title: 'UN SABLIER OU UN MINUTEUR DANS LA SALLE DE BAIN', text: 'Ce petit objet que l’on trouve quasiment dans toutes les cuisines peut être fort utile dans la salle de bain. Il vous rappellera par exemple que le temps passé sous la douche ne doit pas dépasser 5 minutes.'},
+        { title: 'UN THERMOMÈTRE', text: 'Placé dans le congélateur, le réfrigérateur et un peu partout dans la maison, il permet à tout moment de juger si la température est adéquate. Vous pourrez ainsi régler votre congélateur, votre réfrigérateur et vos radiateurs pour éviter de trop consommer'},
+        { title: 'UNE MULTIPRISE À INTERRUPTEUR', text: 'C’est l’accessoire indispensable pour faire des économies d’électricité. Brancher plusieurs appareils sur une multiprise permet d’éteindre simultanément tous vos équipements en veille. À la clé: jusqu’à 10% d’économies sur votre facture d’électricité!'},
+        { title: 'UNE PRISE PROGRAMMABLE MÉCANIQUE', text: 'Grâce à un système de programmation hebdomadaire et/ou quotidienne, cette prise doté d’une minuterie permet d’automatiser la mise en marche/l’arrêt de vos appareils électriques. En déterminant ainsi précisément leurs périodes de fonctionnement, vous réalisez des économies d’électricité.'},
+        { title: 'UN WATTMÈTRE', text: 'Relié à une prise, ce système permet de vérifier la consommation de votre appareil électrique. Il sera ensuite plus facile pour vous de mesurer les économies que vous pouvez réaliser'}
+      ]
+    }
+  },
+  computed: {
+    randomAdvice: function () {
+      let randomNumber = Math.floor(Math.random() * Math.floor(this.advicesTable.length))
+      return this.advicesTable[randomNumber]
     }
   },
   methods: {
     checkState: function (value) {
       (value) ? this.$emit('adviceBlockDestroy', true) : null
-    }
+    },
   }
 }
 </script>
@@ -73,6 +81,11 @@ export default {
         color: #343434;
         font-size: 25px;
         font-weight: 600;
+      }
+    }
+    .picture-advice {
+      .img {
+        margin-top: 25px;
       }
     }
     .col {
