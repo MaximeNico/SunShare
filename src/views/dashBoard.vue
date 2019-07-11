@@ -20,7 +20,7 @@
           </div>
           <div class="row">
             <div class="col col-12">
-              <graphLine :dataGraph="tableGraphConso" :titleGraph="'test graph conso'" />
+              <graphLine :dataGraph="getDatasFromUser" :titleGraph="'test graph conso'" />
             </div>
           </div>
         </div>
@@ -72,6 +72,7 @@ import moreInformationIcon from '@/components/icons/moreInformationIcon'
 import graphLine from '@/components/graphLine'
 import graphDoughnut from '@/components/graphDoughnut'
 import { mapState } from 'vuex'
+import axios from 'axios'
 
 export default {
   name: 'dashBoard',
@@ -83,7 +84,8 @@ export default {
   },
   data: function () {
     return {
-      tableGraphConso: [
+      //tableGraphConso:
+      /*[
         ['8h', 350, 450, 210],
         ['10h', 340, 240, 220],
         ['12h', 520, 280, 210],
@@ -91,7 +93,7 @@ export default {
         ['16h', 550, 500, 280],
         ['18h', 430, 520, 250],
         ['20h', 300, 450, 220]
-      ],
+      ]*/
       tableGraphPrev: [
         ['8h', 120, 150, 250],
         ['12h', 250, 360, 170],
@@ -113,9 +115,27 @@ export default {
   computed: mapState([
     'app'
   ]),
-  // mounted: function () {
-  //   (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
-  // },
+  computed: {
+    getDatasFromUser: function(id=1){
+      axios.get('http://127.0.0.1:8888/datas/user/1/2019-06-27', {crossdomain: true})
+        .then(function (response) {
+          // handle success
+          console.log(response.data);
+          return response.data;
+        })
+        .catch(function (error) {
+          // handle error
+          console.log(error);
+        })
+        .finally(function () {
+          // always executed
+        });
+
+    }
+  },
+  mounted: function () {
+    (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
+  },
   methods: {
     checkAdviceBlockStatus: function (value) {
       (value) ? this.showAdvice = false : null

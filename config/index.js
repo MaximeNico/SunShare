@@ -4,6 +4,19 @@
 
 const path = require('path')
 
+// connect to database mongodb vith mongoose
+/*
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/sunshare', {useNewUrlParser: true});
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function() {
+  console.log("we're connected!");
+});
+*/
+// end connect to database
+
+
 module.exports = {
   module: {
     rules: [
