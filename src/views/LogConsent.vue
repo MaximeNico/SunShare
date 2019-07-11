@@ -4,10 +4,17 @@
             <div class="row">
                 <div class="col col-12">
                     <div class="container">
+                      <div class="row textP">
+                        <p class="text">Pour donner votre autorisation, vous devez créer un compte personnel Enedis. Il vous permet également de suivre et gérer vos données de consommation et production en fonction de votre service d’électricité. Munissez-vous de votre facture d’électricité pour créer votre espace.
+                        Enedis gère le réseau d’électricité jusqu’au compteur d’électricité. Pour accèder à vos données de consommation et de production certifiées, autorisez Enedis à nous transmettre vos données Linky.</p>
+                      </div>
+                      <div class="row">
                         <form class="form">
                             <input class="form-control form-control-lg" type="text" placeholder="Entrez votre identifiant client" v-model="inputControl">
+                              <p class="sub-text">En cliquant sur ce bouton, vous allez accéder à votre compte personnel Enedis où vous pourrez donner votre accord pour qu’Enedis nous transmette vos données.</p>
                             <button type="submit" class="btn btn-primary" @click.prevent="sendInputClient">Envoyé</button>
                         </form>
+                      </div>
                     </div>
                 </div>
             </div>
@@ -49,13 +56,24 @@ export default {
   align-items: center;
   justify-content: space-around;
   .container {
+    color: aliceblue;
+    .textP {
+      margin-bottom: 30px;
+      text-align: center;
+    }
     .form {
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       .form-control {
         text-align: center;
+        margin-bottom: 20px;
       }
       .btn {
         margin-top: 20px;
+        width: 105px;
       }
     }
   }
