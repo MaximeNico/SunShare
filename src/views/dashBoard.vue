@@ -113,9 +113,9 @@ export default {
   computed: mapState([
     'app'
   ]),
-  mounted: function () {
-    (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
-  },
+  // mounted: function () {
+  //   (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
+  // },
   methods: {
     checkAdviceBlockStatus: function (value) {
       (value) ? this.showAdvice = false : null
