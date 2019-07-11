@@ -17,7 +17,6 @@
 
 <script>
 import axiosHelper from '@/store/helper/axiosHelper'
-// import axios from 'axios'
 import { mapState } from 'vuex'
 
 export default {
@@ -32,10 +31,11 @@ export default {
   ]),
   methods: {
     sendInputClient: function () {
-      let url = 'https://gw.hml.api.enedis.fr/group/espace-particuliers/consentement-linky/oauth2/authorize?client_id=' + this.inputControl + '&state=abcdef&duration=P12M&response_type=code&redirect_uri=https://linky.sunshare.fr'
-      axiosHelper.getInfos(url)
-      // this.$store.commit('onUse') // replace momentaly the acces token
-      // this.$router.push({ name: 'dashBoard' })
+      // let url = 'https://gw.hml.api.enedis.fr/group/espace-particuliers/consentement-linky/oauth2/authorize?client_id=' + this.inputControl + '&state=abcdef&duration=P12M&response_type=code&redirect_uri=https://linky.sunshare.fr'
+      // axiosHelper.getInfos(url)
+      // window.location.replace(url)
+      this.$store.commit('onUse') // replace momentaly the acces token
+      this.$router.push({ name: 'dashBoard' })
     }
   }
 }

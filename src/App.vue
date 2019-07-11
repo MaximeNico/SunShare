@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid app">
-      <div class="row app" v-if="appState">
+      <div class="row app" v-if="hasToken">
         <div class="col col-md-3 col-lg-2 menuSide">
           <menuSide />
         </div>
@@ -28,6 +28,8 @@
 <script>
 import menuSide from '@/components/menuSide'
 import appHeader from '@/components/appHeader'
+import { mapState } from 'vuex'
+import axiosHelper from '@/store/helper/axiosHelper'
 
 export default {
   name: 'App',
@@ -35,14 +37,31 @@ export default {
     menuSide,
     appHeader
   },
-  computed: {
-    appState: function () {
-      return this.$store.getters.appOnUse
+  data: function () {
+    return {
+      hasToken: false,
+      receiveToken: false
     }
   },
+  computed: mapState([
+    'app'
+  ]),
+  created: function () {
+    // https://linky.sunshare.fr?code=d2NdD7128QF72BXuAdJCdoM9qHfHPo&state=abcdef&usage_point_id=22516914714270
+  },
   mounted: function () {
-    (!this.appState) ? this.$router.push({ name: 'logConsent' }) : null
-    console.log('computed mapState: ', this.appState)
+    console.log('Created app component :', window.location)
+    let urlP = window.location.href
+    console.log('url parse search :', urlP.search())
+    let code = 'Ap7J7rUeupjSUmcKXnrB5rXorIsvaB'
+    let clientId = 'a782e2d9-f1da-4c11-8659-2084fd407f99'
+    let url = ' https://gw.hml.api.enedis.fr/v1/oauth2/token?redirect_uri=https://linky.sunshare.fr&grant_type=authorization_code&client_id=' + clientId + '&client_secret=b736094a-0776-4d07-ac16-9861a0540a25&code=' + code
+    // axiosHelper.postInfos(url)
+    console.log(axiosHelper.postInfos(url))
+  },
+  updated: function () {
+    console.log('APP updated !')
+    (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
   }
 }
 </script>

@@ -71,6 +71,7 @@ import adviceBlock from '@/components/adviceBlock'
 import moreInformationIcon from '@/components/icons/moreInformationIcon'
 import graphLine from '@/components/graphLine'
 import graphDoughnut from '@/components/graphDoughnut'
+import { mapState } from 'vuex'
 
 export default {
   name: 'dashBoard',
@@ -108,6 +109,12 @@ export default {
       scoreTitle: 'Mon score',
       scoreText: 'Cat ipsum dolor sit amet, and sometimes switches in french and say "miaou" just because well why not for groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked dont wait for the storm to pass, dance in the rain. Sit in window and stare oooh, a bird, yum cough.'
     }
+  },
+  computed: mapState([
+    'app'
+  ]),
+  mounted: function () {
+    (!this.app.token.accessToken) ? this.$router.push({ name: 'logConsent' }) : null
   },
   methods: {
     checkAdviceBlockStatus: function (value) {
