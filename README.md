@@ -555,7 +555,7 @@ Si vous êtes sous windows télécharger la dernière version de [putty](https:/
 Si vous ne connaissez pas son adresse IP mais qu'il est connecté sur le même sous réseau utiliser la commande suivante :
 
 ```
-ssh pi@raspeberrypi.local
+ssh pi@raspberrypi.local
 ```
 
 Une fois connecté mettre à jour la dernière version des paquets avec la ligne :</p>
