@@ -38,9 +38,11 @@ export default {
 
 .menuSide {
   display: flex;
+  position:fixed;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  max-width: 250px;
   .menu-buttons {
     min-height: 250px;
     width: 100%;

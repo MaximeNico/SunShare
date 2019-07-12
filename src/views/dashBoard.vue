@@ -2,8 +2,8 @@
   <div class="container-fluid dashBoard">
     <div class="row advice-contain">
       <div class="col col-12">
-        <transition name="fade" mode="in-out">
-          <adviceBlock v-if="showAdvice" @adviceBlockDestroy="checkAdviceBlockStatus" />
+        <transition name="fade">
+          <adviceBlock v-if="showAdvice" :title="'Conseil du jour !'" @adviceBlockDestroy="checkAdviceBlockStatus" />
         </transition>
       </div>
     </div>
@@ -93,9 +93,9 @@ export default {
         ['20h', 180, 190, 150]
       ],
       tableGraphScore: [
-        ['Injection', 25],
-        ['Soutirage', 15],
-        ['Auto-consommation', 60]
+        ['Soutirage', 35],
+        ['Injection', 35],
+        ['Auto-consommation', 30]
       ],
       showAdvice: true,
       graphConsoTitle: 'Graphique de mes consommations',
@@ -116,7 +116,6 @@ export default {
           console.log(response.data);
           this.tableGraphConso = response.data
           return this.tableGraphConso;
-
         })
         .catch(function (error) {
           // handle error
@@ -130,19 +129,6 @@ export default {
 
   },
   mounted: function () {
-    /*axios.get('http://127.0.0.1:8888/datas/user/1/2019-06-27', {crossdomain: true})
-      .then(function (response) {
-        // handle success
-        console.log(response.data);
-        this.tableGraphConso = response.data;
-      })
-      .catch(function (error) {
-        // handle error
-        console.log(error);
-      })
-      .finally(function () {
-        // always executed
-      });*/
   },
   methods: {
     checkAdviceBlockStatus: function (value) {
